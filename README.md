@@ -1,1 +1,1 @@
-#Ğ
+#GOTEN SEKS      EVET ABİ
