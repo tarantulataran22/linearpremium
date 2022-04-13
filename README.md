@@ -1,1 +1,2 @@
-#GOTEN SEKS      EVET ABİ
+#
+
