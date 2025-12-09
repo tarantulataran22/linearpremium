@@ -1,0 +1,759 @@
+{
+  "client.dll": {
+    "classes": {
+      "CClientAlphaProperty": {
+        "fields": {
+          "m_bAlphaOverride": 0,
+          "m_bShadowAlphaOverride": 0,
+          "m_flFadeScale": 28,
+          "m_flRenderFxDuration": 36,
+          "m_flRenderFxStartTime": 32,
+          "m_nAlpha": 19,
+          "m_nDesyncOffset": 20,
+          "m_nDistFadeEnd": 26,
+          "m_nDistFadeStart": 24,
+          "m_nRenderFX": 16,
+          "m_nRenderMode": 17,
+          "m_nReserved": 0,
+          "m_nReserved2": 22
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CCompositeMaterialEditorDoc": {
+        "fields": {
+          "m_KVthumbnail": 40,
+          "m_Points": 16,
+          "m_nVersion": 8
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CFlashlightEffect": {
+        "fields": {
+          "m_FlashlightTexture": 96,
+          "m_MuzzleFlashTexture": 104,
+          "m_bCastsShadows": 88,
+          "m_bIsOn": 16,
+          "m_bMuzzleFlashEnabled": 32,
+          "m_flCurrentPullBackDist": 92,
+          "m_flFarZ": 80,
+          "m_flFov": 76,
+          "m_flLinearAtten": 84,
+          "m_flMuzzleFlashBrightness": 36,
+          "m_quatMuzzleFlashOrientation": 48,
+          "m_textureName": 112,
+          "m_vecMuzzleFlashOrigin": 64
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CGlobalLightBase": {
+        "fields": {
+          "m_AmbientColor1": 110,
+          "m_AmbientColor2": 114,
+          "m_AmbientColor3": 118,
+          "m_AmbientDirection": 56,
+          "m_InspectorSpecularDirection": 80,
+          "m_LightColor": 106,
+          "m_ShadowDirection": 44,
+          "m_SpecularColor": 100,
+          "m_SpecularDirection": 68,
+          "m_SpotLightAngles": 32,
+          "m_SpotLightOrigin": 20,
+          "m_ViewAngles": 224,
+          "m_ViewOrigin": 212,
+          "m_WorldPoints": 240,
+          "m_bBackgroundClearNotRequired": 142,
+          "m_bEnableSeparateSkyboxFog": 196,
+          "m_bEnableShadows": 140,
+          "m_bEnabled": 105,
+          "m_bOldEnableShadows": 141,
+          "m_bSpotLight": 16,
+          "m_bStartDisabled": 104,
+          "m_flAmbientScale1": 176,
+          "m_flAmbientScale2": 180,
+          "m_flCloud1Direction": 152,
+          "m_flCloud1Speed": 148,
+          "m_flCloud2Direction": 160,
+          "m_flCloud2Speed": 156,
+          "m_flCloudScale": 144,
+          "m_flFOV": 128,
+          "m_flFarZ": 136,
+          "m_flFoWDarkness": 192,
+          "m_flGroundScale": 184,
+          "m_flLightScale": 188,
+          "m_flNearZ": 132,
+          "m_flSpecularIndependence": 96,
+          "m_flSpecularPower": 92,
+          "m_flSunDistance": 124,
+          "m_flViewFoV": 236,
+          "m_hEnvSky": 1212,
+          "m_hEnvWind": 1208,
+          "m_vFogOffsetLayer0": 1192,
+          "m_vFogOffsetLayer1": 1200,
+          "m_vFowColor": 200
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CInterpolatedValue": {
+        "fields": {
+          "m_flEndTime": 4,
+          "m_flEndValue": 12,
+          "m_flStartTime": 0,
+          "m_flStartValue": 8,
+          "m_nInterpType": 16
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CInventoryImageData": {
+        "fields": {
+          "inventory_image_data": 16,
+          "m_nNodeType": 0,
+          "name": 8
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          },
+          {
+            "name": "MVDataOutlinerDetailExpr",
+            "type": "Unknown"
+          },
+          {
+            "name": "MVDataOverlayType",
+            "type": "Unknown"
+          },
+          {
+            "name": "MVDataPreviewWidget",
+            "type": "Unknown"
+          },
+          {
+            "name": "MVDataOutlinerLeafNameFn",
+            "type": "Unknown"
+          },
+          {
+            "name": "MVDataOutlinerLeafColorFn",
+            "type": "Unknown"
+          },
+          {
+            "name": "MVDataOutlinerLeafDetailFn",
+            "type": "Unknown"
+          },
+          {
+            "name": "MVDataVirtualNodeFactoryFn",
+            "type": "Unknown"
+          },
+          {
+            "name": "MVDataPreLoadFixupFn",
+            "type": "Unknown"
+          },
+          {
+            "name": "MVDataPostSaveFixupFn",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CNmEventConsumerHudModelArmsAttributes": {
+        "fields": {},
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CPlayerSprayDecalRenderHelper": {
+        "fields": {},
+        "metadata": [],
+        "parent": null
+      },
+      "C_CSGO_PreviewPlayer_GraphController": {
+        "fields": {
+          "m_bCT": 888,
+          "m_nTeamPreviewRandom": 776,
+          "m_pszCharacterMode": 616,
+          "m_pszEndOfMatchCelebration": 736,
+          "m_pszTeamPreviewPosition": 696,
+          "m_pszTeamPreviewVariant": 656,
+          "m_pszWeaponState": 808,
+          "m_pszWeaponType": 848
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "C_CommandContext": {
+        "fields": {
+          "command_number": 160,
+          "needsprocessing": 0
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "C_IronSightController": {
+        "fields": {
+          "m_angDeltaAverage": 48,
+          "m_angViewLast": 144,
+          "m_bIronSightAvailable": 16,
+          "m_flFiringInaccuracyExtraWidthMultiplier": 164,
+          "m_flInterpolationLastUpdated": 44,
+          "m_flIronSightAmount": 20,
+          "m_flIronSightAmountBiased": 28,
+          "m_flIronSightAmountBiased_Interpolated": 40,
+          "m_flIronSightAmountGained": 24,
+          "m_flIronSightAmountGained_Interpolated": 36,
+          "m_flIronSightAmount_Interpolated": 32,
+          "m_flSpeedRatio": 168,
+          "m_vecDotCoords": 156
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CompMatMutatorCondition_t": {
+        "fields": {
+          "m_bPassWhenTrue": 32,
+          "m_nMutatorCondition": 0,
+          "m_strMutatorConditionContainerName": 8,
+          "m_strMutatorConditionContainerVarName": 16,
+          "m_strMutatorConditionContainerVarValue": 24
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          },
+          {
+            "name": "MPropertyElementNameFn",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CompMatPropertyMutator_t": {
+        "fields": {
+          "m_bCaptureInRenderDoc": 785,
+          "m_bEnabled": 0,
+          "m_bIsScratchTarget": 772,
+          "m_bSplatDebugInfo": 784,
+          "m_colDrawText_Color": 872,
+          "m_nMutatorCommandType": 4,
+          "m_nResolution": 768,
+          "m_nSetValue_Value": 104,
+          "m_strCompressionFormat": 776,
+          "m_strCopyKeysWithSuffix_FindSuffix": 88,
+          "m_strCopyKeysWithSuffix_InputContainerSrc": 80,
+          "m_strCopyKeysWithSuffix_ReplaceSuffix": 96,
+          "m_strCopyMatchingKeys_InputContainerSrc": 72,
+          "m_strCopyProperty_InputContainerProperty": 24,
+          "m_strCopyProperty_InputContainerSrc": 16,
+          "m_strCopyProperty_TargetProperty": 32,
+          "m_strDrawText_Font": 880,
+          "m_strDrawText_InputContainerProperty": 856,
+          "m_strDrawText_InputContainerSrc": 848,
+          "m_strGenerateTexture_InitialContainer": 760,
+          "m_strGenerateTexture_TargetParam": 752,
+          "m_strInitWith_Container": 8,
+          "m_strPopInputQueue_Container": 840,
+          "m_strRandomRollInputVars_SeedInputVar": 40,
+          "m_vecConditionalMutators": 816,
+          "m_vecConditions": 888,
+          "m_vecDrawText_Position": 864,
+          "m_vecRandomRollInputVars_InputVarsToRoll": 48,
+          "m_vecTexGenInstructions": 792
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          },
+          {
+            "name": "MPropertyElementNameFn",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CompositeMaterialAssemblyProcedure_t": {
+        "fields": {
+          "m_vecCompMatIncludes": 0,
+          "m_vecCompositeInputContainers": 48,
+          "m_vecMatchFilters": 24,
+          "m_vecPropertyMutators": 72
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          },
+          {
+            "name": "MPropertyElementNameFn",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CompositeMaterialEditorPoint_t": {
+        "fields": {
+          "m_ChildModelName": 256,
+          "m_KVModelStateChoices": 232,
+          "m_ModelName": 0,
+          "m_bEnableChildModel": 248,
+          "m_flCycle": 228,
+          "m_nSequenceIndex": 224,
+          "m_vecCompositeMaterialAssemblyProcedures": 480,
+          "m_vecCompositeMaterials": 504
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CompositeMaterialInputContainer_t": {
+        "fields": {
+          "m_bEnabled": 0,
+          "m_bExposeExternally": 280,
+          "m_nCompositeMaterialInputContainerSourceType": 4,
+          "m_strAlias": 240,
+          "m_strAttrName": 232,
+          "m_strAttrNameForVar": 272,
+          "m_strSpecificContainerMaterial": 8,
+          "m_vecLooseVariables": 248
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          },
+          {
+            "name": "MPropertyElementNameFn",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CompositeMaterialInputLooseVariable_t": {
+        "fields": {
+          "m_bExposeExternally": 8,
+          "m_bExposedVariableIsFixedRange": 32,
+          "m_bHasFloatBounds": 88,
+          "m_bValueBoolean": 68,
+          "m_cValueColor4": 140,
+          "m_flValueFloatW": 128,
+          "m_flValueFloatW_Max": 136,
+          "m_flValueFloatW_Min": 132,
+          "m_flValueFloatX": 92,
+          "m_flValueFloatX_Max": 100,
+          "m_flValueFloatX_Min": 96,
+          "m_flValueFloatY": 104,
+          "m_flValueFloatY_Max": 112,
+          "m_flValueFloatY_Min": 108,
+          "m_flValueFloatZ": 116,
+          "m_flValueFloatZ_Max": 124,
+          "m_flValueFloatZ_Min": 120,
+          "m_nPanoramaRenderRes": 640,
+          "m_nTextureType": 616,
+          "m_nValueIntW": 84,
+          "m_nValueIntX": 72,
+          "m_nValueIntY": 76,
+          "m_nValueIntZ": 80,
+          "m_nValueSystemVar": 144,
+          "m_nVariableType": 64,
+          "m_strExposedFriendlyGroupName": 24,
+          "m_strExposedFriendlyName": 16,
+          "m_strExposedHiddenWhenTrue": 48,
+          "m_strExposedValueList": 56,
+          "m_strExposedVisibleWhenTrue": 40,
+          "m_strName": 0,
+          "m_strPanoramaPanelPath": 632,
+          "m_strResourceMaterial": 152,
+          "m_strString": 624,
+          "m_strTextureCompilationVtexTemplate": 608,
+          "m_strTextureContentAssetPath": 376,
+          "m_strTextureRuntimeResourcePath": 384
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          },
+          {
+            "name": "MPropertyElementNameFn",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CompositeMaterialMatchFilter_t": {
+        "fields": {
+          "m_bPassWhenTrue": 24,
+          "m_nCompositeMaterialMatchFilterType": 0,
+          "m_strMatchFilter": 8,
+          "m_strMatchValue": 16
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          },
+          {
+            "name": "MPropertyElementNameFn",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CompositeMaterial_t": {
+        "fields": {
+          "m_FinalKVs": 88,
+          "m_PreGenerationKVs": 24,
+          "m_TargetKVs": 8,
+          "m_vecGeneratedTextures": 128
+        },
+        "metadata": [
+          {
+            "name": "MPropertyElementNameFn",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "GeneratedTextureHandle_t": {
+        "fields": {
+          "m_strBitmapName": 0
+        },
+        "metadata": [
+          {
+            "name": "MPropertyElementNameFn",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "IClientAlphaProperty": {
+        "fields": {},
+        "metadata": [],
+        "parent": null
+      },
+      "TimedEvent": {
+        "fields": {
+          "m_TimeBetweenEvents": 0,
+          "m_fNextEvent": 4
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "inv_image_camera_t": {
+        "fields": {
+          "angle": 0,
+          "fov": 12,
+          "orbit_distance": 48,
+          "target": 24,
+          "target_nudge": 36,
+          "zfar": 20,
+          "znear": 16
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "inv_image_data_t": {
+        "fields": {
+          "camera": 48,
+          "item": 16,
+          "light0": 156,
+          "light1": 188,
+          "lightfill": 128,
+          "lightsun": 100,
+          "map": 0
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "inv_image_item_t": {
+        "fields": {
+          "angle": 12,
+          "pose_sequence": 24,
+          "position": 0
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "inv_image_light_barn_t": {
+        "fields": {
+          "angle": 12,
+          "brightness": 24,
+          "color": 0,
+          "orbit_distance": 28
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "inv_image_light_fill_t": {
+        "fields": {
+          "angle": 12,
+          "brightness": 24,
+          "color": 0
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "inv_image_light_sun_t": {
+        "fields": {
+          "angle": 12,
+          "brightness": 24,
+          "color": 0
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "inv_image_map_t": {
+        "fields": {
+          "map_name": 0,
+          "map_rotation": 8
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      }
+    },
+    "enums": {
+      "_K__m_": {
+        "alignment": 255,
+        "members": {},
+        "type": "unknown"
+      },
+      "__t______": {
+        "alignment": 0,
+        "members": {},
+        "type": "unknown"
+      },
+      "pNC___": {
+        "alignment": 6,
+        "members": {
+          "": 0,
+          "\u00105?\u0003�": 0,
+          "Talkswat:1:1                                                                                                                                                                                       T": 12573474817,
+          "Talkswat_epic:1:1": 8606777345,
+          "Talkswat_epic:1:1,SaidHelpswat_epic:1:3": 12580093953,
+          "swat_epic.defusing_01": 12580225024,
+          "swat_epic.defusing_02": 12580225024,
+          "swat_epic.defusing_03": 12580225024,
+          "swat_epic.defusing_04": 12580225024,
+          "swat_epic.defusing_05": 12580225024,
+          "swat_epic.disagree_01": 12580225024,
+          "swat_epic.disagree_02": 12580225024,
+          "swat_epic.disagree_03": 12580225024,
+          "swat_epic.disagree_04": 12580225024,
+          "swat_epic.disagree_05": 12580225024,
+          "swat_epic.disagree_06": 12580225024,
+          "swat_epic.disagree_07": 12580225024,
+          "swat_epic.escorting_hostage_01": 12580093952,
+          "swat_epic.escorting_hostage_02": 8589934592,
+          "swat_epic.escorting_hostage_03": 8589934592,
+          "swat_epic.escorting_hostage_04": 8589934592,
+          "swat_epic.escorting_hostage_05": 8589934592,
+          "swat_epic.escorting_hostage_06": 8589934592,
+          "swat_epic.escorting_hostage_07": 12573474816,
+          "swat_epic.following_friend_01": 12580225024,
+          "swat_epic.following_friend_02": 12580225024,
+          "swat_epic.following_friend_03": 12580225024,
+          "swat_epic.following_friend_04": 12580225024,
+          "swat_epic.following_friend_05": 12580225024,
+          "swat_epic.following_friend_06": 12580225024,
+          "swat_epic.guarding_bombsite_01": 12580225024,
+          "swat_epic.guarding_bombsite_02": 12580225024,
+          "swat_epic.guarding_bombsite_03": 12580225024,
+          "swat_epic.guarding_bombsite_04": 12580225024,
+          "swat_epic.guarding_bombsite_05": 12580225024,
+          "swat_epic.guarding_bombsite_06": 12580225024,
+          "swat_epic.guarding_escapezone_01": 12573474816,
+          "swat_epic.guarding_escapezone_02": 12573474816,
+          "swat_epic.guarding_escapezone_03": 12573474816,
+          "swat_epic.guarding_escapezone_04": 12580093952,
+          "swat_epic.guarding_escapezone_05": 12573474816,
+          "swat_epic.guarding_hostage_01": 12573474816,
+          "swat_epic.guarding_hostage_02": 8606777344,
+          "swat_epic.guarding_hostage_03": 10897457152,
+          "swat_epic.guarding_hostage_04": 10897457152,
+          "swat_epic.guarding_hostage_05": 10897457152,
+          "swat_epic.heard_sound_01": 10897457152,
+          "swat_epic.heard_sound_02": 12573474816,
+          "swat_epic.heard_sound_03": 12573474816,
+          "swat_epic.heard_sound_04": 12580093952,
+          "swat_epic.hostage_ready_01": 12580093952,
+          "swat_epic.hostage_ready_02": 12580093952,
+          "swat_epic.hostage_ready_03": 12573409280,
+          "swat_epic.hostage_ready_04": 12573474816,
+          "swat_epic.hostage_ready_05": 10897457152,
+          "swat_epic.i_killed_enemy_01": 8589934592,
+          "swat_epic.i_killed_enemy_02": 8589934592,
+          "swat_epic.i_killed_enemy_03": 12470779904,
+          "swat_epic.i_killed_enemy_04": 8589934592,
+          "swat_epic.i_killed_enemy_05": 8589934592,
+          "swat_epic.i_killed_enemy_06": 8589934592,
+          "swat_epic.i_killed_enemy_07": 8589934592,
+          "swat_epic.i_killed_enemy_08": 8589934592,
+          "swat_epic.i_killed_enemy_09": 8589934592,
+          "swat_epic.i_killed_enemy_10": 12580093952,
+          "swat_epic.i_killed_enemy_11": 8589934592,
+          "swat_epic.i_killed_enemy_12": 12580093952,
+          "swat_epic.i_killed_enemy_13": 8589934592,
+          "swat_epic.i_plant_bomb_01": 12573474816,
+          "swat_epic.i_plant_bomb_02": 10897457152,
+          "swat_epic.i_plant_bomb_03": 12573474816,
+          "swat_epic.last_unit_alive_01": 8589934592,
+          "swat_epic.last_unit_alive_02": 12470779904,
+          "swat_epic.last_unit_alive_03": 8589934592,
+          "swat_epic.last_unit_alive_04": 8589934592,
+          "swat_epic.last_unit_alive_05": 8589934592,
+          "swat_epic.last_unit_alive_06": 8589934592,
+          "swat_epic.last_unit_alive_07": 12470779904,
+          "swat_epic.loc_a_01": 12580093952,
+          "swat_epic.loc_a_02": 12573474816,
+          "swat_epic.loc_a_03": 10897457152,
+          "swat_epic.loc_a_04": 12573474816,
+          "swat_epic.loc_a_05": 8606777344,
+          "swat_epic.loc_a_06": 8606777344,
+          "swat_epic.loc_a_07": 12573474816,
+          "swat_epic.loc_a_08": 12580093952,
+          "swat_epic.loc_a_09": 12573474816,
+          "swat_epic.loc_a_10": 12573474816,
+          "swat_epic.loc_a_11": 12573474816,
+          "swat_epic.loc_a_12": 12580093952,
+          "swat_epic.loc_back_01": 12580225024,
+          "swat_epic.loc_bridge_01": 12573474816,
+          "swat_epic.loc_catwalk": 12573474816,
+          "swat_epic.loc_doubledoors": 10897457152,
+          "swat_epic.loc_enemy_spawn": 12573474816,
+          "swat_epic.loc_front": 12580093952,
+          "swat_epic.loc_hole": 12573474816,
+          "swat_epic.loc_long": 12573474816,
+          "swat_epic.loc_platform_01": 12580093952,
+          "swat_epic.loc_ramp": 12470779904,
+          "swat_epic.loc_yard_01": 12573474816,
+          "swat_epic.lost_sight_enemy_01": 8589934592,
+          "swat_epic.lost_sight_enemy_02": 8589934592,
+          "swat_epic.lost_sight_enemy_03": 8589934592,
+          "swat_epic.lost_sight_enemy_04": 12470779904,
+          "swat_epic.omw_to_escapezone_01": 12573474816,
+          "swat_epic.omw_to_escapezone_02": 12573474816,
+          "swat_epic.omw_to_escapezone_03": 12573474816,
+          "swat_epic.omw_to_hostage_01": 12573474816,
+          "swat_epic.omw_to_hostage_02": 8606777344,
+          "swat_epic.omw_to_hostage_03": 10897457152,
+          "swat_epic.omw_to_hostage_04": 12573474816,
+          "swat_epic.omw_to_plant_a_01": 12580093952,
+          "swat_epic.omw_to_plant_a_02": 12573474816,
+          "swat_epic.omw_to_plant_a_03": 12580093952,
+          "swat_epic.omw_to_plant_a_04": 12573474816,
+          "swat_epic.omw_to_plant_b_01": 12580093952,
+          "swat_epic.omw_to_plant_b_02": 12573474816,
+          "swat_epic.omw_to_plant_b_03": 12580093952,
+          "swat_epic.omw_to_plant_b_04": 12573474816,
+          "swat_epic.request_help_01": 12580093952,
+          "swat_epic.request_help_02": 12580093952,
+          "swat_epic.request_help_03": 12580093952,
+          "swat_epic.request_help_04": 12573409280,
+          "swat_epic.request_help_05": 12573409280,
+          "swat_epic.request_help_06": 12580093952,
+          "swat_epic.sees_enemy_killed_01": 12580225024,
+          "swat_epic.sees_enemy_killed_02": 12580225024,
+          "swat_epic.sees_enemy_killed_03": 12580225024,
+          "swat_epic.sees_enemy_killed_04": 12580225024,
+          "swat_epic.sees_enemy_killed_05": 12580225024,
+          "swat_epic.sees_enemy_killed_06": 12580225024,
+          "swat_epic.sees_enemy_killed_07": 12580225024,
+          "swat_epic.sees_enemy_killed_08": 12580225024,
+          "swat_epic.sees_enemy_killed_09": 12580225024,
+          "swat_epic.sees_enemy_killed_10": 12580225024,
+          "swat_epic.sees_enemy_killed_11": 12580225024,
+          "swat_epic.sees_enemy_killed_12": 12580225024,
+          "swat_epic.sees_enemy_killed_13": 12580225024,
+          "swat_epic.sees_friend_killed_01": 12573474816,
+          "swat_epic.sees_friend_killed_02": 12573474816,
+          "swat_epic.sees_friend_killed_03": 12573474816,
+          "swat_epic.sees_friend_killed_04": 12573474816,
+          "swat_epic.sees_friend_killed_05": 12884836352,
+          "swat_epic.sees_friend_killed_06": 12884836352,
+          "swat_epic.sees_friend_killed_07": 8589934592,
+          "swat_epic.sees_hostage_death_01": 10897457152,
+          "swat_epic.sees_hostage_death_02": 10897457152,
+          "swat_epic.sees_hostage_death_03": 10897457152,
+          "swat_epic.sees_hostage_death_04": 10897457152,
+          "swat_epic.sees_hostage_death_05": 10897457152,
+          "swat_epic.takingfire_01": 12573474816,
+          "swat_epic.takingfire_02": 8606777344,
+          "swat_epic.takingfire_03": 8606777344,
+          "swat_epic.takingfire_04": 10897457152,
+          "swat_epic.takingfire_05": 12573409280,
+          "swat_epic.takingfire_06": 12573409280,
+          "swat_epic.takingfire_07": 12580093952,
+          "swat_epic.takingfire_friendly_01": 8589934592,
+          "swat_epic.takingfire_friendly_02": 8589934592,
+          "swat_epic.takingfire_friendly_03": 12470779904,
+          "swat_epic.takingfire_friendly_04": 8589934592,
+          "swat_epic.takingfire_friendly_05": 12470779904,
+          "swat_epic.takingfire_friendly_06": 8589934592,
+          "swat_epic.takingfire_friendly_07": 8589934592,
+          "swat_epic.takingfire_friendly_08": 8589934592,
+          "swat_epic.takingfire_friendly_09": 8589934592,
+          "swat_epic.takingfire_friendly_10": 8589934592,
+          "swat_epic.takingfire_friendly_11": 12580093952,
+          "swat_epic.takingfire_friendly_12": 8589934592,
+          "swat_epic.tmap_cs_source35": 12573474816,
+          "swat_epic.tmap_cs_source36": 12573474816,
+          "�BC\u0003�": 5969699911680,
+          "�[?\u0003�": 5969700478048,
+          "�k?\u0003�": 5969700477952
+        },
+        "type": "unknown"
+      }
+    }
+  }
+}
