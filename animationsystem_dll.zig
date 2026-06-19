@@ -1,11 +1,11 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-03-16 07:21:21.899821400 UTC
+// 2026-06-19 11:06:41.672420600 UTC
 
 pub const cs2_dumper = struct {
     pub const schemas = struct {
         // Module: animationsystem.dll
-        // Class count: 662
-        // Enum count: 139
+        // Class count: 695
+        // Enum count: 148
         pub const animationsystem_dll = struct {
             // Alignment: 4
             // Member count: 2
@@ -26,6 +26,16 @@ pub const cs2_dumper = struct {
             pub const PulseMethodCallMode_t = enum(u32) {
                 SYNC_WAIT_FOR_COMPLETION = 0x0,
                 ASYNC_FIRE_AND_FORGET = 0x1
+            };
+            // Alignment: 4
+            // Member count: 6
+            pub const ParticleSetMethod_t = enum(u32) {
+                PARTICLE_SET_REPLACE_VALUE = 0x0,
+                PARTICLE_SET_SCALE_INITIAL_VALUE = 0x1,
+                PARTICLE_SET_ADD_TO_INITIAL_VALUE = 0x2,
+                PARTICLE_SET_RAMP_CURRENT_VALUE = 0x3,
+                PARTICLE_SET_SCALE_CURRENT_VALUE = 0x4,
+                PARTICLE_SET_ADD_TO_CURRENT_VALUE = 0x5
             };
             // Alignment: 4
             // Member count: 17
@@ -120,6 +130,14 @@ pub const cs2_dumper = struct {
                 PF_BIAS_TYPE_COUNT = 0x3
             };
             // Alignment: 1
+            // Member count: 4
+            pub const CNmTargetWarpNode__TargetUpdateRule_t = enum(u8) {
+                None = 0x0,
+                Recalculate = 0x1,
+                Offset = 0x2,
+                RecalculateOrOffset = 0x3
+            };
+            // Alignment: 1
             // Member count: 6
             pub const SharedMovementGait_t = enum(u8) {
                 eInvalid = 0xFF,
@@ -154,7 +172,7 @@ pub const cs2_dumper = struct {
                 IKTARGETCOORDINATESYSTEM_COUNT = 0x2
             };
             // Alignment: 4
-            // Member count: 31
+            // Member count: 32
             pub const ParticleFloatType_t = enum(u32) {
                 PF_TYPE_INVALID = 0xFFFFFFFF,
                 PF_TYPE_LITERAL = 0x0,
@@ -170,23 +188,24 @@ pub const cs2_dumper = struct {
                 PF_TYPE_CONCURRENT_DEF_COUNT = 0xA,
                 PF_TYPE_CLOSEST_CAMERA_DISTANCE = 0xB,
                 PF_TYPE_SNAPSHOT_COUNT = 0xC,
-                PF_TYPE_RENDERER_CAMERA_DISTANCE = 0xD,
-                PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT = 0xE,
-                PF_TYPE_PARTICLE_NOISE = 0xF,
-                PF_TYPE_PARTICLE_AGE = 0x10,
-                PF_TYPE_PARTICLE_AGE_NORMALIZED = 0x11,
-                PF_TYPE_PARTICLE_FLOAT = 0x12,
-                PF_TYPE_PARTICLE_INITIAL_FLOAT = 0x13,
-                PF_TYPE_PARTICLE_VECTOR_COMPONENT = 0x14,
-                PF_TYPE_PARTICLE_INITIAL_VECTOR_COMPONENT = 0x15,
-                PF_TYPE_PARTICLE_SPEED = 0x16,
-                PF_TYPE_PARTICLE_NUMBER = 0x17,
-                PF_TYPE_PARTICLE_NUMBER_NORMALIZED = 0x18,
-                PF_TYPE_PARTICLE_ROPE_SEGMENT = 0x19,
-                PF_TYPE_PARTICLE_ROPE_SEGMENT_NORMALIZED = 0x1A,
-                PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DISTANCE = 0x1B,
-                PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DOT_PRODUCT = 0x1C,
-                PF_TYPE_COUNT = 0x1D
+                PF_TYPE_SNAPSHOT_CHANGED = 0xD,
+                PF_TYPE_RENDERER_CAMERA_DISTANCE = 0xE,
+                PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT = 0xF,
+                PF_TYPE_PARTICLE_NOISE = 0x10,
+                PF_TYPE_PARTICLE_AGE = 0x11,
+                PF_TYPE_PARTICLE_AGE_NORMALIZED = 0x12,
+                PF_TYPE_PARTICLE_FLOAT = 0x13,
+                PF_TYPE_PARTICLE_INITIAL_FLOAT = 0x14,
+                PF_TYPE_PARTICLE_VECTOR_COMPONENT = 0x15,
+                PF_TYPE_PARTICLE_INITIAL_VECTOR_COMPONENT = 0x16,
+                PF_TYPE_PARTICLE_SPEED = 0x17,
+                PF_TYPE_PARTICLE_NUMBER = 0x18,
+                PF_TYPE_PARTICLE_NUMBER_NORMALIZED = 0x19,
+                PF_TYPE_PARTICLE_ROPE_SEGMENT = 0x1A,
+                PF_TYPE_PARTICLE_ROPE_SEGMENT_NORMALIZED = 0x1B,
+                PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DISTANCE = 0x1C,
+                PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DOT_PRODUCT = 0x1D,
+                PF_TYPE_COUNT = 0x1E
             };
             // Alignment: 1
             // Member count: 4
@@ -272,6 +291,32 @@ pub const cs2_dumper = struct {
                 HermiteFeaturePreserving = 0x2,
                 Bezier = 0x3
             };
+            // Alignment: 4
+            // Member count: 5
+            pub const ParticleColorBlendMode_t = enum(u32) {
+                PARTICLEBLEND_DEFAULT = 0x0,
+                PARTICLEBLEND_OVERLAY = 0x1,
+                PARTICLEBLEND_DARKEN = 0x2,
+                PARTICLEBLEND_LIGHTEN = 0x3,
+                PARTICLEBLEND_MULTIPLY = 0x4
+            };
+            // Alignment: 4
+            // Member count: 13
+            pub const ParticleColorBlendType_t = enum(u32) {
+                PARTICLE_COLOR_BLEND_MULTIPLY = 0x0,
+                PARTICLE_COLOR_BLEND_MULTIPLY2X = 0x1,
+                PARTICLE_COLOR_BLEND_DIVIDE = 0x2,
+                PARTICLE_COLOR_BLEND_ADD = 0x3,
+                PARTICLE_COLOR_BLEND_SUBTRACT = 0x4,
+                PARTICLE_COLOR_BLEND_MOD2X = 0x5,
+                PARTICLE_COLOR_BLEND_SCREEN = 0x6,
+                PARTICLE_COLOR_BLEND_MAX = 0x7,
+                PARTICLE_COLOR_BLEND_MIN = 0x8,
+                PARTICLE_COLOR_BLEND_REPLACE = 0x9,
+                PARTICLE_COLOR_BLEND_AVERAGE = 0xA,
+                PARTICLE_COLOR_BLEND_NEGATE = 0xB,
+                PARTICLE_COLOR_BLEND_LUMINANCE = 0xC
+            };
             // Alignment: 1
             // Member count: 4
             pub const NmTransitionRuleCondition_t = enum(u8) {
@@ -290,6 +335,12 @@ pub const cs2_dumper = struct {
                 MESH_BUFFER_USAGE_MESHLET_TRIS = 0x8,
                 MESH_BUFFER_USAGE_RT_PROXY = 0x10,
                 MESH_BUFFER_USAGE_VERTEX_ALBEDO = 0x20
+            };
+            // Alignment: 4
+            // Member count: 2
+            pub const NmGraphDebugMode_t = enum(u32) {
+                Off = 0x0,
+                On = 0x1
             };
             // Alignment: 4
             // Member count: 2
@@ -483,6 +534,13 @@ pub const cs2_dumper = struct {
             };
             // Alignment: 4
             // Member count: 3
+            pub const ParticleDirectionNoiseType_t = enum(u32) {
+                PARTICLE_DIR_NOISE_PERLIN = 0x0,
+                PARTICLE_DIR_NOISE_CURL = 0x1,
+                PARTICLE_DIR_NOISE_WORLEY_BASIC = 0x2
+            };
+            // Alignment: 4
+            // Member count: 3
             pub const AnimParamNetworkSetting = enum(u32) {
                 Auto = 0x0,
                 AlwaysNetwork = 0x1,
@@ -559,6 +617,13 @@ pub const cs2_dumper = struct {
                 SearchOnlyGraphEvents = 0x6,
                 SearchOnlyAnimEvents = 0x7,
                 SearchBothGraphAndAnimEvents = 0x8
+            };
+            // Alignment: 4
+            // Member count: 3
+            pub const AnimationType_t = enum(u32) {
+                ANIMATION_TYPE_FIXED_RATE = 0x0,
+                ANIMATION_TYPE_FIT_LIFETIME = 0x1,
+                ANIMATION_TYPE_MANUAL_FRAMES = 0x2
             };
             // Alignment: 4
             // Member count: 37
@@ -777,6 +842,13 @@ pub const cs2_dumper = struct {
                 FLAG_PROCEDURAL = 0x400000
             };
             // Alignment: 4
+            // Member count: 3
+            pub const GPUParticleCollisionMode_t = enum(u32) {
+                PARTICLE_GPU_COLLISION_MODE_RT = 0x0,
+                PARTICLE_GPU_COLLISION_MODE_DEPTH = 0x1,
+                PARTICLE_GPU_COLLISION_MODE_HYBRID = 0x2
+            };
+            // Alignment: 4
             // Member count: 4
             pub const MorphBundleType_t = enum(u32) {
                 MORPH_BUNDLE_TYPE_NONE = 0x0,
@@ -899,7 +971,7 @@ pub const cs2_dumper = struct {
                 PF_NOISE_MODIFIER_RINGS = 0x3
             };
             // Alignment: 4
-            // Member count: 20
+            // Member count: 21
             pub const ParticleVecType_t = enum(u32) {
                 PVEC_TYPE_INVALID = 0xFFFFFFFF,
                 PVEC_TYPE_LITERAL = 0x0,
@@ -908,19 +980,20 @@ pub const cs2_dumper = struct {
                 PVEC_TYPE_PARTICLE_VECTOR = 0x3,
                 PVEC_TYPE_PARTICLE_INITIAL_VECTOR = 0x4,
                 PVEC_TYPE_PARTICLE_VELOCITY = 0x5,
-                PVEC_TYPE_CP_VALUE = 0x6,
-                PVEC_TYPE_CP_RELATIVE_POSITION = 0x7,
-                PVEC_TYPE_CP_RELATIVE_DIR = 0x8,
-                PVEC_TYPE_CP_RELATIVE_RANDOM_DIR = 0x9,
-                PVEC_TYPE_FLOAT_COMPONENTS = 0xA,
-                PVEC_TYPE_FLOAT_INTERP_CLAMPED = 0xB,
-                PVEC_TYPE_FLOAT_INTERP_OPEN = 0xC,
-                PVEC_TYPE_FLOAT_INTERP_GRADIENT = 0xD,
-                PVEC_TYPE_RANDOM_UNIFORM = 0xE,
-                PVEC_TYPE_RANDOM_UNIFORM_OFFSET = 0xF,
-                PVEC_TYPE_CP_DELTA = 0x10,
-                PVEC_TYPE_CLOSEST_CAMERA_POSITION = 0x11,
-                PVEC_TYPE_COUNT = 0x12
+                PVEC_TYPE_PARTICLE_GRAVITY = 0x6,
+                PVEC_TYPE_CP_VALUE = 0x7,
+                PVEC_TYPE_CP_RELATIVE_POSITION = 0x8,
+                PVEC_TYPE_CP_RELATIVE_DIR = 0x9,
+                PVEC_TYPE_CP_RELATIVE_RANDOM_DIR = 0xA,
+                PVEC_TYPE_FLOAT_COMPONENTS = 0xB,
+                PVEC_TYPE_FLOAT_INTERP_CLAMPED = 0xC,
+                PVEC_TYPE_FLOAT_INTERP_OPEN = 0xD,
+                PVEC_TYPE_FLOAT_INTERP_GRADIENT = 0xE,
+                PVEC_TYPE_RANDOM_UNIFORM = 0xF,
+                PVEC_TYPE_RANDOM_UNIFORM_OFFSET = 0x10,
+                PVEC_TYPE_CP_DELTA = 0x11,
+                PVEC_TYPE_CLOSEST_CAMERA_POSITION = 0x12,
+                PVEC_TYPE_COUNT = 0x13
             };
             // Alignment: 1
             // Member count: 5
@@ -1263,6 +1336,14 @@ pub const cs2_dumper = struct {
                 MAX_PATTACH_TYPES = 0x10
             };
             // Alignment: 4
+            // Member count: 4
+            pub const CNmEventTargetEntity_t = enum(u32) {
+                Self = 0x0,
+                Weapon = 0x1,
+                HeldItem = 0x2,
+                Custom = 0x3
+            };
+            // Alignment: 4
             // Member count: 3
             pub const FieldNetworkOption = enum(u32) {
                 Auto = 0x0,
@@ -1430,7 +1511,7 @@ pub const cs2_dumper = struct {
                 BlendSpace_Model_TranslationOnly = 0x3
             };
             // Alignment: 4
-            // Member count: 8
+            // Member count: 10
             pub const MovementCapability_t = enum(u32) {
                 eStrafe = 0x0,
                 eIdleTurn = 0x1,
@@ -1439,7 +1520,9 @@ pub const cs2_dumper = struct {
                 eInstantStop = 0x4,
                 eShuffle = 0x5,
                 ePlantedTurn = 0x6,
-                eCount = 0x7
+                eUseStartAsPlantedTurn = 0x7,
+                eLean = 0x8,
+                eCount = 0x9
             };
             // Alignment: 4
             // Member count: 5
@@ -1533,6 +1616,7 @@ pub const cs2_dumper = struct {
             // MGetKV3ClassDefaults
             // MPulseEditorHeaderIcon
             // MPropertyFriendlyName
+            // MPropertyDescription
             pub const CPulseCell_WaitForObservable = struct {
                 pub const m_Condition: usize = 0x48; // PulseObservableBoolExpression_t
                 pub const m_OnTrue: usize = 0xC0; // CPulse_ResumePoint
@@ -1930,7 +2014,7 @@ pub const cs2_dumper = struct {
             // MPulseEditorCanvasItemSpecKV3
             pub const CPulseCell_BooleanSwitchState = struct {
                 pub const m_Condition: usize = 0x48; // PulseObservableBoolExpression_t
-                pub const m_SubGraph: usize = 0xC0; // CPulse_OutflowConnection
+                pub const m_Always: usize = 0xC0; // CPulse_OutflowConnection
                 pub const m_WhenTrue: usize = 0x108; // CPulse_OutflowConnection
                 pub const m_WhenFalse: usize = 0x150; // CPulse_OutflowConnection
             };
@@ -1992,6 +2076,24 @@ pub const cs2_dumper = struct {
             pub const CPulseCell_Value_RandomInt = struct {
             };
             // Parent: None
+            // Field count: 11
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CAnimationLayer = struct {
+                pub const m_hSequence: usize = 0x0; // CAnimNetVar<int32>
+                pub const m_flPrevCycle: usize = 0xC; // float32
+                pub const m_flCycle: usize = 0x10; // CAnimNetVar<float32>
+                pub const m_flWeight: usize = 0x1C; // CAnimNetVar<float32>
+                pub const m_nOrder: usize = 0x28; // CAnimNetVar<int32>
+                pub const m_bLooping: usize = 0x34; // bool
+                pub const m_nFlags: usize = 0x38; // int32
+                pub const m_bSequenceFinished: usize = 0x3C; // bool
+                pub const m_flKillRate: usize = 0x40; // float32
+                pub const m_flKillDelay: usize = 0x44; // float32
+                pub const m_nPriority: usize = 0x48; // int32
+            };
+            // Parent: None
             // Field count: 6
             //
             // Metadata:
@@ -2032,10 +2134,10 @@ pub const cs2_dumper = struct {
             // MGetKV3ClassDefaults
             pub const CPulseCell_Step_CallExternalMethod = struct {
                 pub const m_MethodName: usize = 0x48; // PulseSymbol_t
-                pub const m_GameBlackboard: usize = 0x58; // PulseSymbol_t
-                pub const m_ExpectedArgs: usize = 0x68; // CUtlLeanVector<CPulseRuntimeMethodArg>
-                pub const m_nAsyncCallMode: usize = 0x78; // PulseMethodCallMode_t
-                pub const m_OnFinished: usize = 0x80; // CPulse_ResumePoint
+                pub const m_nBlackboardIndex: usize = 0x58; // PulseRuntimeBlackboardReferenceIndex_t
+                pub const m_ExpectedArgs: usize = 0x60; // CUtlLeanVector<CPulseRuntimeMethodArg>
+                pub const m_nAsyncCallMode: usize = 0x70; // PulseMethodCallMode_t
+                pub const m_OnFinished: usize = 0x78; // CPulse_ResumePoint
             };
             // Parent: None
             // Field count: 3
@@ -2186,6 +2288,22 @@ pub const cs2_dumper = struct {
             pub const CInputStreamUpdateNode = struct {
             };
             // Parent: None
+            // Field count: 12
+            pub const CNmFootIKTask = struct {
+                pub const m_nLeftEffectorBoneIdx: usize = 0x48; // int32
+                pub const m_nRightEffectorBoneIdx: usize = 0x4C; // int32
+                pub const m_leftTargetTransform: usize = 0x50; // CTransform
+                pub const m_rightTargetTransform: usize = 0x70; // CTransform
+                pub const m_nLeftTargetBoneIdx: usize = 0x90; // int32
+                pub const m_nRightTargetBoneIdx: usize = 0x94; // int32
+                pub const m_leftTarget: usize = 0xA0; // CNmTarget
+                pub const m_rightTarget: usize = 0xD0; // CNmTarget
+                pub const m_blendMode: usize = 0x100; // NmIKBlendMode_t
+                pub const m_flBlendWeight: usize = 0x104; // float32
+                pub const m_bIsTargetInWorldSpace: usize = 0x108; // bool
+                pub const m_bIsRunningFromDeserializedData: usize = 0x109; // bool
+            };
+            // Parent: None
             // Field count: 3
             //
             // Metadata:
@@ -2202,13 +2320,32 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmParameterizedBlendNode__CDefinition = struct {
-                pub const m_sourceNodeIndices: usize = 0x10; // CUtlVectorFixedGrowable<int16,5>
-                pub const m_nInputParameterValueNodeIdx: usize = 0x38; // int16
-                pub const m_bAllowLooping: usize = 0x3A; // bool
+                pub const m_sourceNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
+                pub const m_nInputParameterValueNodeIdx: usize = 0x28; // int16
+                pub const m_bAllowLooping: usize = 0x2A; // bool
             };
             // Parent: None
             // Field count: 0
             pub const CNmScaleTask = struct {
+            };
+            // Parent: None
+            // Field count: 12
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const PerTickSettings_t = struct {
+                pub const m_startingLocalToWorld: usize = 0x0; // CTransform
+                pub const m_prevLocalToWorld: usize = 0x20; // CTransform
+                pub const m_finalLocalToWorld: usize = 0x40; // CTransform
+                pub const m_rootMotion: usize = 0x60; // CRootMotion
+                pub const m_updateID: usize = 0x69C; // int32
+                pub const m_flLastTimeStep: usize = 0x6A4; // float32
+                pub const m_flPrevAnimTime: usize = 0x6A8; // float32
+                pub const m_flNextAnimTime: usize = 0x6AC; // float32
+                pub const m_bAwaken: usize = 0x6B4; // bool
+                pub const m_bTeleported: usize = 0x6B5; // bool
+                pub const m_bIsClient: usize = 0x6B6; // bool
+                pub const m_bIsPredicted: usize = 0x6B7; // bool
             };
             // Parent: None
             // Field count: 1
@@ -2216,7 +2353,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmFrameSnapEvent = struct {
-                pub const m_frameSnapMode: usize = 0x20; // NmFrameSnapEventMode_t
+                pub const m_frameSnapMode: usize = 0x18; // NmFrameSnapEventMode_t
             };
             // Parent: None
             // Field count: 2
@@ -2307,6 +2444,17 @@ pub const cs2_dumper = struct {
             pub const CTaskStatusAnimTag = struct {
             };
             // Parent: None
+            // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CStateNodeInstanceData = struct {
+                pub const m_stateWeights: usize = 0x0; // CRelativeArray<float32>
+                pub const m_vTransitionVelocityDeltaWS: usize = 0x8; // Vector
+                pub const m_currentStateStartTime: usize = 0x20; // CAnimNetVar<float32>
+                pub const m_resetCount: usize = 0x3C; // CAnimNetVar<uint8>
+            };
+            // Parent: None
             // Field count: 5
             //
             // Metadata:
@@ -2367,8 +2515,8 @@ pub const cs2_dumper = struct {
             //
             // Metadata:
             // MGetKV3ClassDefaults
-            pub const MovementGaitId_t = struct {
-                pub const m_sId: usize = 0x0; // CGlobalSymbol
+            pub const CChoreoInstanceData = struct {
+                pub const m_AnimOverlay: usize = 0x0; // CAnimationLayer[12]
             };
             // Parent: None
             // Field count: 1
@@ -2412,6 +2560,17 @@ pub const cs2_dumper = struct {
                 pub const m_duration: usize = 0x7C; // float32
                 pub const m_paramSpans: usize = 0x80; // CParamSpanUpdater
                 pub const m_tags: usize = 0x98; // CUtlVector<TagSpan_t>
+            };
+            // Parent: None
+            // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CStateMachineInstanceData = struct {
+                pub const m_flTimeInState: usize = 0x0; // float32
+                pub const m_currentTransitionIndex: usize = 0x4; // CAnimNetVar<int32>
+                pub const m_prevStateIndex: usize = 0x10; // int32
+                pub const m_scheduledTransitionIndex: usize = 0x14; // int32
             };
             // Parent: None
             // Field count: 1
@@ -2461,6 +2620,14 @@ pub const cs2_dumper = struct {
             // Field count: 1
             pub const PulseRuntimeDomainValueIndex_t = struct {
                 pub const m_Value: usize = 0x0; // int16
+            };
+            // Parent: None
+            // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const LookData = struct {
+                pub const m_vLookTarget: usize = 0x0; // CAnimNetVar<Vector>
             };
             // Parent: None
             // Field count: 11
@@ -2738,6 +2905,16 @@ pub const cs2_dumper = struct {
                 pub const m_sHitGroup: usize = 0x8; // CGlobalSymbol
             };
             // Parent: None
+            // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CBlend2DInstanceData = struct {
+                pub const m_dampedValue: usize = 0x8; // Vector2D
+                pub const m_flCycle: usize = 0x44; // float32
+                pub const m_flPrevCycle: usize = 0x48; // float32
+            };
+            // Parent: None
             // Field count: 2
             //
             // Metadata:
@@ -2745,6 +2922,25 @@ pub const cs2_dumper = struct {
             pub const LookAtBone_t = struct {
                 pub const m_index: usize = 0x0; // int32
                 pub const m_weight: usize = 0x4; // float32
+            };
+            // Parent: None
+            // Field count: 12
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CDirectPlaybackInstanceData = struct {
+                pub const m_vTargetPosition: usize = 0x0; // Vector
+                pub const m_flTargetFacing: usize = 0xC; // float32
+                pub const m_flInterpEndTime: usize = 0x10; // float32
+                pub const m_weights: usize = 0x14; // float32[4]
+                pub const m_sequences: usize = 0x24; // SequenceData[4]
+                pub const m_currentSequenceIndex: usize = 0x104; // uint32
+                pub const m_currentSequenceData: usize = 0x108; // CAnimNetVar<uint64>
+                pub const m_flFadeInTime: usize = 0x118; // float32
+                pub const m_flFadeOutTime: usize = 0x11C; // float32
+                pub const m_flForcedCycle: usize = 0x120; // CAnimNetVar<float32>
+                pub const m_bResetPending: usize = 0x130; // bool
+                pub const m_SequenceCycleZeroTime: usize = 0x138; // CAnimNetVar<float32>
             };
             // Parent: None
             // Field count: 11
@@ -2782,6 +2978,14 @@ pub const cs2_dumper = struct {
                 pub const m_bUseStartValue: usize = 0x1B; // bool
             };
             // Parent: None
+            // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CAnimationGraphInstance = struct {
+                pub const m_bTagDispatchDirty: usize = 0x329; // bool
+            };
+            // Parent: None
             // Field count: 7
             //
             // Metadata:
@@ -2812,6 +3016,15 @@ pub const cs2_dumper = struct {
                 pub const m_bIsBoneSpaceOffset: usize = 0x12; // bool
                 pub const m_rotationOffset: usize = 0x20; // Quaternion
                 pub const m_translationOffset: usize = 0x30; // Vector
+            };
+            // Parent: None
+            // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const MotionMatchingInstanceData = struct {
+                pub const m_currentSelection: usize = 0x2C; // MotionSelection
+                pub const m_previousSelection: usize = 0x84; // MotionSelection
             };
             // Parent: None
             // Field count: 1
@@ -2897,8 +3110,8 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmClipSelectorNode__CDefinition = struct {
-                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
-                pub const m_conditionNodeIndices: usize = 0x28; // CUtlLeanVectorFixedGrowable<int16,5>
+                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,8>
+                pub const m_conditionNodeIndices: usize = 0x28; // CUtlLeanVectorFixedGrowable<int16,8>
             };
             // Parent: None
             // Field count: 9
@@ -2975,6 +3188,31 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CBlockSelectionMetricEvaluator = struct {
+            };
+            // Parent: None
+            // Field count: 18
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const MovementData = struct {
+                pub const m_goalWayPointPos: usize = 0x0; // Vector
+                pub const m_vMoveDir: usize = 0xC; // CAnimNetVar<Vector>
+                pub const m_vAcceleration: usize = 0x20; // CAnimNetVar<Vector>
+                pub const m_flCurrentMoveSpeed: usize = 0x34; // CAnimNetVar<float32>
+                pub const m_flTargetMoveSpeed: usize = 0x40; // CAnimNetVar<float32>
+                pub const m_flGoalDistance: usize = 0x4C; // CAnimNetVar<float32>
+                pub const m_flBoundaryRadius: usize = 0x58; // CAnimNetVar<float32>
+                pub const m_bGoalChanged: usize = 0x64; // bool
+                pub const m_bHasPath: usize = 0x68; // CAnimNetVar<bool>
+                pub const m_flFacingHeading: usize = 0x74; // CAnimNetVar<float32>
+                pub const m_vManualFacingDirection: usize = 0x80; // Vector
+                pub const m_vManualFacingTarget: usize = 0x8C; // VectorWS
+                pub const m_nFacingMode: usize = 0x98; // CAnimNetVar<uint8>
+                pub const m_bForceFacing: usize = 0xA4; // CAnimNetVar<bool>
+                pub const m_nActiveMotorIndex: usize = 0xB0; // CAnimNetVar<int32>
+                pub const m_bOnGround: usize = 0xBC; // CAnimNetVar<bool>
+                pub const m_vFacingPosition: usize = 0xC8; // CAnimNetVar<Vector>
+                pub const m_vPrevFacingPosition: usize = 0xDC; // Vector
             };
             // Parent: None
             // Field count: 1
@@ -3073,7 +3311,7 @@ pub const cs2_dumper = struct {
                 pub const m_eType: usize = 0x38; // int32
             };
             // Parent: None
-            // Field count: 5
+            // Field count: 6
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3083,6 +3321,7 @@ pub const cs2_dumper = struct {
                 pub const nRetiredAtNodeID: usize = 0x1C; // PulseDocNodeID_t
                 pub const flLastReferenced: usize = 0x20; // float32
                 pub const nLastValidEntryIdx: usize = 0x24; // int32
+                pub const bWasAnObservableComputation: usize = 0x28; // bool
             };
             // Parent: None
             // Field count: 1
@@ -3281,24 +3520,25 @@ pub const cs2_dumper = struct {
                 pub const m_embeddedKeyvalues: usize = 0x148; // CUtlString
             };
             // Parent: None
-            // Field count: 13
+            // Field count: 14
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmGraphDefinition = struct {
                 pub const m_variationID: usize = 0x0; // CGlobalSymbol
                 pub const m_skeleton: usize = 0x8; // CStrongHandle<InfoForResourceTypeCNmSkeleton>
-                pub const m_pUserData: usize = 0x10; // CNmGraphVariationUserData*
-                pub const m_persistentNodeIndices: usize = 0x18; // CUtlVector<int16>
-                pub const m_nRootNodeIdx: usize = 0x30; // int16
-                pub const m_controlParameterIDs: usize = 0x38; // CUtlVector<CGlobalSymbol>
-                pub const m_virtualParameterIDs: usize = 0x50; // CUtlVector<CGlobalSymbol>
-                pub const m_virtualParameterNodeIndices: usize = 0x68; // CUtlVector<int16>
-                pub const m_referencedGraphSlots: usize = 0x80; // CUtlVector<CNmGraphDefinition::ReferencedGraphSlot_t>
-                pub const m_externalGraphSlots: usize = 0x98; // CUtlVector<CNmGraphDefinition::ExternalGraphSlot_t>
-                pub const m_externalPoseSlots: usize = 0xB0; // CUtlVector<CNmGraphDefinition::ExternalPoseSlot_t>
-                pub const m_nodePaths: usize = 0x138; // CUtlVector<CUtlString>
-                pub const m_resources: usize = 0x150; // CUtlVector<CStrongHandleVoid>
+                pub const m_supportedSecondarySkeletons: usize = 0x10; // CUtlVector<CStrongHandle<InfoForResourceTypeCNmSkeleton>>
+                pub const m_pUserData: usize = 0x28; // CNmGraphVariationUserData*
+                pub const m_persistentNodeIndices: usize = 0x30; // CUtlVector<int16>
+                pub const m_nRootNodeIdx: usize = 0x48; // int16
+                pub const m_controlParameterIDs: usize = 0x50; // CUtlVector<CGlobalSymbol>
+                pub const m_virtualParameterIDs: usize = 0x68; // CUtlVector<CGlobalSymbol>
+                pub const m_virtualParameterNodeIndices: usize = 0x80; // CUtlVector<int16>
+                pub const m_referencedGraphSlots: usize = 0x98; // CUtlVector<CNmGraphDefinition::ReferencedGraphSlot_t>
+                pub const m_externalGraphSlots: usize = 0xB0; // CUtlVector<CNmGraphDefinition::ExternalGraphSlot_t>
+                pub const m_externalPoseSlots: usize = 0xC8; // CUtlVector<CNmGraphDefinition::ExternalPoseSlot_t>
+                pub const m_nodePaths: usize = 0x150; // CUtlVector<CUtlString>
+                pub const m_resources: usize = 0x168; // CUtlVector<CStrongHandleVoid>
             };
             // Parent: None
             // Field count: 2
@@ -3306,8 +3546,8 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmSelectorNode__CDefinition = struct {
-                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
-                pub const m_conditionNodeIndices: usize = 0x28; // CUtlLeanVectorFixedGrowable<int16,5>
+                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,8>
+                pub const m_conditionNodeIndices: usize = 0x28; // CUtlLeanVectorFixedGrowable<int16,8>
             };
             // Parent: None
             // Field count: 15
@@ -3435,6 +3675,20 @@ pub const cs2_dumper = struct {
             //
             // Metadata:
             // MGetKV3ClassDefaults
+            pub const CDirectionalBlendInstanceData = struct {
+                pub const m_dampedValue: usize = 0x0; // float32
+                pub const m_flCycle: usize = 0x14; // float32
+                pub const m_flPrevCycle: usize = 0x18; // float32
+                pub const m_flPlaybackRate: usize = 0x1C; // CAnimNetVar<float32>
+                pub const m_flCycleZeroTime: usize = 0x28; // CAnimNetVar<float32>
+                pub const m_resetCycleValue: usize = 0x34; // CAnimNetVar<float32>
+                pub const m_resetCount: usize = 0x40; // CAnimNetVar<float32>
+            };
+            // Parent: None
+            // Field count: 7
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub const CDampedPathAnimMotorUpdater = struct {
                 pub const m_flAnticipationTime: usize = 0x2C; // float32
                 pub const m_flMinSpeedScale: usize = 0x30; // float32
@@ -3474,11 +3728,12 @@ pub const cs2_dumper = struct {
                 pub const m_MaterialGroupName: usize = 0x48; // CUtlString
             };
             // Parent: None
-            // Field count: 1
+            // Field count: 2
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmEntityAttributeEventBase = struct {
+                pub const m_target: usize = 0x18; // CNmEventTargetEntity_t
                 pub const m_attributeName: usize = 0x20; // CUtlString
             };
             // Parent: None
@@ -3488,6 +3743,15 @@ pub const cs2_dumper = struct {
             // MGetKV3ClassDefaults
             pub const CNmVirtualParameterBoneMaskNode__CDefinition = struct {
                 pub const m_nChildNodeIdx: usize = 0x10; // int16
+            };
+            // Parent: None
+            // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const SequenceData = struct {
+                pub const m_hSequence: usize = 0x0; // HSequence
+                pub const m_cycle: usize = 0x4; // CNetworkedCycle
             };
             // Parent: None
             // Field count: 2
@@ -3750,9 +4014,9 @@ pub const cs2_dumper = struct {
                 pub const m_defaultMaskNodeIdx: usize = 0x10; // int16
                 pub const m_parameterValueNodeIdx: usize = 0x12; // int16
                 pub const m_bSwitchDynamically: usize = 0x14; // bool
-                pub const m_maskNodeIndices: usize = 0x18; // CUtlVectorFixedGrowable<int16,7>
-                pub const m_parameterValues: usize = 0x40; // CUtlVectorFixedGrowable<CGlobalSymbol,7>
-                pub const m_flBlendTimeSeconds: usize = 0x90; // float32
+                pub const m_maskNodeIndices: usize = 0x18; // CUtlLeanVectorFixedGrowable<int16,8>
+                pub const m_parameterValues: usize = 0x30; // CUtlLeanVectorFixedGrowable<CGlobalSymbol,7>
+                pub const m_flBlendTimeSeconds: usize = 0x70; // float32
             };
             // Parent: None
             // Field count: 1
@@ -3804,8 +4068,8 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmParameterizedSelectorNode__CDefinition = struct {
-                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
-                pub const m_optionWeights: usize = 0x28; // CUtlLeanVectorFixedGrowable<uint8,5>
+                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,8>
+                pub const m_optionWeights: usize = 0x28; // CUtlLeanVectorFixedGrowable<uint8,8>
                 pub const m_parameterNodeIdx: usize = 0x38; // int16
                 pub const m_bIgnoreInvalidOptions: usize = 0x3A; // bool
                 pub const m_bHasWeightsSet: usize = 0x3B; // bool
@@ -3825,7 +4089,7 @@ pub const cs2_dumper = struct {
                 pub const m_boneScaleParent: usize = 0x90; // CUtlVector<float32>
             };
             // Parent: None
-            // Field count: 4
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -3833,7 +4097,6 @@ pub const cs2_dumper = struct {
                 pub const m_flStartTime: usize = 0x8; // NmPercent_t
                 pub const m_flDuration: usize = 0xC; // NmPercent_t
                 pub const m_syncID: usize = 0x10; // CGlobalSymbol
-                pub const m_bClientOnly: usize = 0x18; // bool
             };
             // Parent: None
             // Field count: 2
@@ -4026,6 +4289,16 @@ pub const cs2_dumper = struct {
                 pub const m_bUseCustomDuration: usize = 0x38; // bool
             };
             // Parent: None
+            // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const DampedPathMotorInstanceData_t = struct {
+                pub const m_vVelocity: usize = 0x0; // Vector
+                pub const m_vAcceleration: usize = 0xC; // Vector
+                pub const m_bStopping: usize = 0x24; // bool
+            };
+            // Parent: None
             // Field count: 1
             //
             // Metadata:
@@ -4086,11 +4359,12 @@ pub const cs2_dumper = struct {
                 pub const m_nStartSyncEventOffset: usize = 0x44; // int32
             };
             // Parent: None
-            // Field count: 6
+            // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmMaterialAttributeEvent = struct {
+                pub const m_target: usize = 0x18; // CNmEventTargetEntity_t
                 pub const m_attributeName: usize = 0x20; // CUtlString
                 pub const m_attributeNameToken: usize = 0x28; // CUtlStringToken
                 pub const m_x: usize = 0x30; // CPiecewiseCurve
@@ -4104,7 +4378,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmBlend1DNode__CDefinition = struct {
-                pub const m_parameterization: usize = 0x40; // CNmParameterizedBlendNode::Parameterization_t
+                pub const m_parameterization: usize = 0x30; // CNmParameterizedBlendNode::Parameterization_t
             };
             // Parent: None
             // Field count: 6
@@ -4416,11 +4690,11 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmFloatSelectorNode__CDefinition = struct {
-                pub const m_conditionNodeIndices: usize = 0x10; // CUtlVectorFixedGrowable<int16,5>
-                pub const m_values: usize = 0x38; // CUtlVectorFixedGrowable<float32,5>
-                pub const m_flDefaultValue: usize = 0x68; // float32
-                pub const m_flEaseTime: usize = 0x6C; // float32
-                pub const m_easingOp: usize = 0x70; // NmEasingOperation_t
+                pub const m_conditionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
+                pub const m_values: usize = 0x28; // CUtlLeanVectorFixedGrowable<float32,5>
+                pub const m_flDefaultValue: usize = 0x48; // float32
+                pub const m_flEaseTime: usize = 0x4C; // float32
+                pub const m_easingOp: usize = 0x50; // NmEasingOperation_t
             };
             // Parent: None
             // Field count: 10
@@ -4438,6 +4712,14 @@ pub const cs2_dumper = struct {
                 pub const m_bTargetFacePositionIsWorldSpace: usize = 0x8D; // bool
                 pub const m_bEnablePhaseMatching: usize = 0x8E; // bool
                 pub const m_flPhaseMatchingMaxRootMotionSkip: usize = 0x90; // float32
+            };
+            // Parent: None
+            // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const SlopeData = struct {
+                pub const m_vSlopeNormal: usize = 0x0; // Vector
             };
             // Parent: None
             // Field count: 1
@@ -4521,8 +4803,8 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmTargetWarpEvent = struct {
-                pub const m_rule: usize = 0x20; // NmTargetWarpRule_t
-                pub const m_algorithm: usize = 0x21; // NmTargetWarpAlgorithm_t
+                pub const m_rule: usize = 0x18; // NmTargetWarpRule_t
+                pub const m_algorithm: usize = 0x19; // NmTargetWarpAlgorithm_t
             };
             // Parent: None
             // Field count: 1
@@ -4596,7 +4878,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmRootMotionEvent = struct {
-                pub const m_flBlendTimeSeconds: usize = 0x20; // float32
+                pub const m_flBlendTimeSeconds: usize = 0x18; // float32
             };
             // Parent: None
             // Field count: 3
@@ -4607,6 +4889,17 @@ pub const cs2_dumper = struct {
                 pub const m_Name: usize = 0x0; // PulseSymbol_t
                 pub const m_Description: usize = 0x10; // CUtlString
                 pub const m_Args: usize = 0x18; // CUtlLeanVector<CPulseRuntimeMethodArg>
+            };
+            // Parent: None
+            // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CChoiceInstanceData = struct {
+                pub const m_currentChoice: usize = 0x10; // CAnimNetVar<int32>
+                pub const m_previousChoice: usize = 0x1C; // int32
+                pub const m_flClipStartTime: usize = 0x20; // CAnimNetVar<float32>
+                pub const m_choicePreviousCycle: usize = 0x2C; // float32
             };
             // Parent: None
             // Field count: 9
@@ -4623,18 +4916,6 @@ pub const cs2_dumper = struct {
                 pub const m_SnapshotType: usize = 0x90; // AnimationSnapshotType_t
                 pub const m_bHasDecodeDump: usize = 0x94; // bool
                 pub const m_DecodeDump: usize = 0x98; // AnimationDecodeDebugDumpElement_t
-            };
-            // Parent: None
-            // Field count: 5
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
-            pub const CNmIKEffector = struct {
-                pub const m_nBodyIndex: usize = 0x0; // int32
-                pub const m_bEnabled: usize = 0x4; // bool
-                pub const m_vTargetPosition: usize = 0x8; // Vector
-                pub const m_qTargetOrientation: usize = 0x20; // Quaternion
-                pub const m_flWeight: usize = 0x30; // float32
             };
             // Parent: None
             // Field count: 2
@@ -4708,6 +4989,16 @@ pub const cs2_dumper = struct {
                 pub const m_defaultValue: usize = 0x14; // float32
                 pub const m_IDs: usize = 0x18; // CUtlLeanVectorFixedGrowable<CGlobalSymbol,5>
                 pub const m_values: usize = 0x48; // CUtlLeanVectorFixedGrowable<float32,5>
+            };
+            // Parent: None
+            // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const PlayerInputMotorInstanceData_t = struct {
+                pub const m_vInputVectorWS: usize = 0x0; // Vector
+                pub const m_vVelocityWS: usize = 0xC; // Vector
+                pub const m_vAccelerationWS: usize = 0x18; // Vector
             };
             // Parent: None
             // Field count: 17
@@ -4970,17 +5261,17 @@ pub const cs2_dumper = struct {
             // Parent: None
             // Field count: 11
             pub const CNmChainLookatTask = struct {
-                pub const m_nChainEndBoneIdx: usize = 0x58; // int32
-                pub const m_nNumBonesInChain: usize = 0x5C; // int32
-                pub const m_chainForwardDir: usize = 0x60; // Vector
-                pub const m_flBlendWeight: usize = 0x6C; // float32
-                pub const m_flHorizontalAngleLimitDegrees: usize = 0x70; // float32
-                pub const m_flVerticalAngleLimitDegrees: usize = 0x74; // float32
-                pub const m_lookatTarget: usize = 0x78; // Vector
-                pub const m_bIsTargetInWorldSpace: usize = 0x84; // bool
-                pub const m_bIsRunningFromDeserializedData: usize = 0x85; // bool
-                pub const m_flHorizontalAngleDegrees: usize = 0x88; // float32
-                pub const m_flVerticalAngleDegrees: usize = 0x8C; // float32
+                pub const m_nChainEndBoneIdx: usize = 0x48; // int32
+                pub const m_nNumBonesInChain: usize = 0x4C; // int32
+                pub const m_chainForwardDir: usize = 0x50; // Vector
+                pub const m_flBlendWeight: usize = 0x5C; // float32
+                pub const m_flHorizontalAngleLimitDegrees: usize = 0x60; // float32
+                pub const m_flVerticalAngleLimitDegrees: usize = 0x64; // float32
+                pub const m_lookatTarget: usize = 0x68; // Vector
+                pub const m_bIsTargetInWorldSpace: usize = 0x74; // bool
+                pub const m_bIsRunningFromDeserializedData: usize = 0x75; // bool
+                pub const m_flHorizontalAngleDegrees: usize = 0x78; // float32
+                pub const m_flVerticalAngleDegrees: usize = 0x7C; // float32
             };
             // Parent: None
             // Field count: 18
@@ -5024,6 +5315,17 @@ pub const cs2_dumper = struct {
             pub const CWarpSectionAnimTag = struct {
                 pub const m_bWarpPosition: usize = 0x50; // bool
                 pub const m_bWarpOrientation: usize = 0x51; // bool
+            };
+            // Parent: None
+            // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const SelectorInstanceData_t = struct {
+                pub const m_weights: usize = 0x0; // CRelativeArray<float32>
+                pub const m_currentIndexStartTime: usize = 0x8; // CAnimNetVar<float32>
+                pub const m_currentIndex: usize = 0x14; // int32
+                pub const m_previousIndex: usize = 0x18; // int32
             };
             // Parent: None
             // Field count: 1
@@ -5118,13 +5420,14 @@ pub const cs2_dumper = struct {
             pub const CPairedSequenceComponentUpdater = struct {
             };
             // Parent: None
-            // Field count: 13
+            // Field count: 14
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmParticleEvent = struct {
-                pub const m_relevance: usize = 0x20; // CNmEventRelevance_t
-                pub const m_type: usize = 0x24; // CNmParticleEvent::Type_t
+                pub const m_relevance: usize = 0x18; // CNmEventRelevance_t
+                pub const m_type: usize = 0x1C; // CNmParticleEvent::Type_t
+                pub const m_target: usize = 0x20; // CNmEventTargetEntity_t
                 pub const m_hParticleSystem: usize = 0x28; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
                 pub const m_tags: usize = 0x30; // CUtlString
                 pub const m_bStopImmediately: usize = 0x38; // bool
@@ -5136,6 +5439,18 @@ pub const cs2_dumper = struct {
                 pub const m_attachmentType1: usize = 0x58; // ParticleAttachment_t
                 pub const m_config: usize = 0x60; // CUtlString
                 pub const m_effectForConfig: usize = 0x68; // CUtlString
+            };
+            // Parent: None
+            // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const MotionSelection = struct {
+                pub const m_nConfigIndex: usize = 0x24; // NetVarConfigIndex
+                pub const m_flCycleZeroTime: usize = 0x30; // CAnimNetVar<float32>
+                pub const m_flPlaybackSpeed: usize = 0x3C; // CAnimNetVar<float32>
+                pub const m_flStartTime: usize = 0x48; // CAnimNetVar<float32>
+                pub const m_nSample: usize = 0x54; // int32
             };
             // Parent: None
             // Field count: 5
@@ -5205,6 +5520,17 @@ pub const cs2_dumper = struct {
             pub const CParticleVariableRef = struct {
                 pub const m_variableName: usize = 0x0; // CKV3MemberNameWithStorage
                 pub const m_variableType: usize = 0x38; // CPulseValueFullType
+            };
+            // Parent: None
+            // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CMoverInstanceData = struct {
+                pub const m_flDampedValue: usize = 0x0; // float32
+                pub const m_vMovement: usize = 0x4; // Vector
+                pub const m_Rotation: usize = 0x1C; // CRotation
+                pub const m_TargetOrientation: usize = 0x20; // CRotation
             };
             // Parent: None
             // Field count: 1
@@ -5318,6 +5644,18 @@ pub const cs2_dumper = struct {
             pub const CNmSampleTask = struct {
             };
             // Parent: None
+            // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CFollowPathInstanceData = struct {
+                pub const m_xLastPredictedTransformsDeltas: usize = 0x0; // CRelativeArray<CMotionTransform>
+                pub const m_dampedTurnValue: usize = 0x8; // float32
+                pub const m_flTurnAmount: usize = 0xC; // float32
+                pub const m_flPredictionScale: usize = 0x10; // CAnimNetVar<float32>
+                pub const m_flLastPathTime: usize = 0x1C; // float32
+            };
+            // Parent: None
             // Field count: 0
             //
             // Metadata:
@@ -5325,7 +5663,7 @@ pub const cs2_dumper = struct {
             pub const CStaticPoseCacheBuilder = struct {
             };
             // Parent: None
-            // Field count: 12
+            // Field count: 13
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5335,12 +5673,13 @@ pub const cs2_dumper = struct {
                 pub const m_nElementSizeInBytes: usize = 0x8; // uint32
                 pub const m_bMeshoptCompressed: usize = 0xC; // bool
                 pub const m_bMeshoptIndexSequence: usize = 0xD; // bool
-                pub const m_bCompressedZSTD: usize = 0xE; // bool
-                pub const m_bCreateBufferSRV: usize = 0xF; // bool
-                pub const m_bCreateBufferUAV: usize = 0x10; // bool
-                pub const m_bCreateRawBuffer: usize = 0x11; // bool
-                pub const m_bCreatePooledBuffer: usize = 0x12; // bool
-                pub const m_nBufferUsage: usize = 0x13; // uint8
+                pub const m_nMeshoptMeshletEncodeVersion: usize = 0xE; // int8
+                pub const m_bCompressedZSTD: usize = 0xF; // bool
+                pub const m_bCreateBufferSRV: usize = 0x10; // bool
+                pub const m_bCreateBufferUAV: usize = 0x11; // bool
+                pub const m_bCreateRawBuffer: usize = 0x12; // bool
+                pub const m_bCreatePooledBuffer: usize = 0x13; // bool
+                pub const m_nBufferUsage: usize = 0x14; // uint8
                 pub const m_inputLayoutFields: usize = 0x18; // CUtlVector<RenderInputLayoutField_t>
             };
             // Parent: None
@@ -5376,6 +5715,18 @@ pub const cs2_dumper = struct {
                 pub const m_bBlockWaningTags: usize = 0xFC; // bool
                 pub const m_bLockStateWhenWaning: usize = 0xFD; // bool
                 pub const m_bResetWhenActivated: usize = 0xFE; // bool
+            };
+            // Parent: None
+            // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CNmIDBasedSelectorNode__CDefinition = struct {
+                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
+                pub const m_optionIDs: usize = 0x28; // CUtlLeanVectorFixedGrowable<CGlobalSymbol,5>
+                pub const m_nParameterNodeIdx: usize = 0x58; // int16
+                pub const m_nFallbackNodeIdx: usize = 0x5A; // int16
+                pub const m_bIgnoreInvalidOptions: usize = 0x5C; // bool
             };
             // Parent: None
             // Field count: 6
@@ -5414,6 +5765,15 @@ pub const cs2_dumper = struct {
             pub const CModelConfigElement_Command = struct {
                 pub const m_Command: usize = 0x48; // CUtlString
                 pub const m_Args: usize = 0x50; // KeyValues3
+            };
+            // Parent: None
+            // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const TargetSelectorInstanceData_t = struct {
+                pub const m_currentIndex: usize = 0x0; // CAnimNetVar<int32>
+                pub const m_vMSRootMotionAnlyzerTarget: usize = 0x1C; // CAnimNetVar<Vector>
             };
             // Parent: None
             // Field count: 7
@@ -5540,6 +5900,14 @@ pub const cs2_dumper = struct {
                 pub const m_flErrorQuantizationScaleMax: usize = 0x1C; // float32
             };
             // Parent: None
+            // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const PairedSequenceData = struct {
+                pub const m_vecPairedSequences: usize = 0x0; // PairedSequence_t[8]
+            };
+            // Parent: None
             // Field count: 2
             pub const CBoneConstraintPoseSpaceMorph__Input_t = struct {
                 pub const m_inputValue: usize = 0x0; // Vector
@@ -5620,18 +5988,8 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmTransitionEvent = struct {
-                pub const m_rule: usize = 0x20; // NmTransitionRule_t
-                pub const m_ID: usize = 0x28; // CGlobalSymbol
-            };
-            // Parent: None
-            // Field count: 3
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
-            pub const CNmIKRig = struct {
-                pub const m_skeleton: usize = 0x0; // CStrongHandle<InfoForResourceTypeCNmSkeleton>
-                pub const m_vecBodies: usize = 0x8; // CUtlVector<CNmIKBody>
-                pub const m_vecJoints: usize = 0x20; // CUtlVector<CNmIKJoint>
+                pub const m_rule: usize = 0x18; // NmTransitionRule_t
+                pub const m_ID: usize = 0x20; // CGlobalSymbol
             };
             // Parent: None
             // Field count: 2
@@ -5639,8 +5997,8 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmFloatCurveEvent = struct {
-                pub const m_ID: usize = 0x20; // CGlobalSymbol
-                pub const m_curve: usize = 0x28; // CPiecewiseCurve
+                pub const m_ID: usize = 0x18; // CGlobalSymbol
+                pub const m_curve: usize = 0x20; // CPiecewiseCurve
             };
             // Parent: None
             // Field count: 8
@@ -5765,20 +6123,6 @@ pub const cs2_dumper = struct {
             pub const IParticleEffect = struct {
             };
             // Parent: None
-            // Field count: 7
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
-            pub const CNmIKJoint = struct {
-                pub const m_nParentIndex: usize = 0x0; // int32
-                pub const m_nBodyIndex: usize = 0x4; // int32
-                pub const m_xLocalFrame: usize = 0x10; // CTransform
-                pub const m_flSwingLimit: usize = 0x30; // float32
-                pub const m_flMinTwistLimit: usize = 0x34; // float32
-                pub const m_flMaxTwistLimit: usize = 0x38; // float32
-                pub const m_flWeight: usize = 0x3C; // float32
-            };
-            // Parent: None
             // Field count: 2
             //
             // Metadata:
@@ -5788,7 +6132,28 @@ pub const cs2_dumper = struct {
                 pub const m_flTime: usize = 0x54; // float32
             };
             // Parent: None
-            // Field count: 8
+            // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CNmIDBasedClipSelectorNode__CDefinition = struct {
+                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
+                pub const m_optionIDs: usize = 0x28; // CUtlLeanVectorFixedGrowable<CGlobalSymbol,5>
+                pub const m_nParameterNodeIdx: usize = 0x58; // int16
+                pub const m_nFallbackNodeIdx: usize = 0x5A; // int16
+                pub const m_bIgnoreInvalidOptions: usize = 0x5C; // bool
+            };
+            // Parent: None
+            // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CLeanMatrixInstanceData = struct {
+                pub const m_flValueY: usize = 0x0; // float32
+                pub const m_flValueX: usize = 0x4; // float32
+            };
+            // Parent: None
+            // Field count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -5797,10 +6162,11 @@ pub const cs2_dumper = struct {
                 pub const m_translationRangeY: usize = 0x8; // NmCompressionSettings_t::QuantizationRange_t
                 pub const m_translationRangeZ: usize = 0x10; // NmCompressionSettings_t::QuantizationRange_t
                 pub const m_scaleRange: usize = 0x18; // NmCompressionSettings_t::QuantizationRange_t
-                pub const m_constantRotation: usize = 0x20; // Quaternion
-                pub const m_bIsRotationStatic: usize = 0x30; // bool
-                pub const m_bIsTranslationStatic: usize = 0x31; // bool
-                pub const m_bIsScaleStatic: usize = 0x32; // bool
+                pub const m_nTrackReadOffset: usize = 0x20; // int32
+                pub const m_constantRotation: usize = 0x30; // Quaternion
+                pub const m_bIsRotationStatic: usize = 0x40; // bool
+                pub const m_bIsTranslationStatic: usize = 0x41; // bool
+                pub const m_bIsScaleStatic: usize = 0x42; // bool
             };
             // Parent: None
             // Field count: 8
@@ -5918,8 +6284,8 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmLegacyEvent = struct {
-                pub const m_animEventClassName: usize = 0x20; // CUtlString
-                pub const m_KV: usize = 0x28; // KeyValues3
+                pub const m_animEventClassName: usize = 0x18; // CUtlString
+                pub const m_KV: usize = 0x20; // KeyValues3
             };
             // Parent: None
             // Field count: 3
@@ -5976,6 +6342,17 @@ pub const cs2_dumper = struct {
             //
             // Metadata:
             // MGetKV3ClassDefaults
+            pub const CWayPointHelperInstanceData = struct {
+                pub const m_vMovement: usize = 0x0; // Vector
+                pub const m_vRotation: usize = 0xC; // QAngle
+                pub const m_vWaypointPosWS: usize = 0x18; // Vector
+                pub const m_bStopUpdatingWaypointPos: usize = 0x24; // bool
+            };
+            // Parent: None
+            // Field count: 4
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
             pub const CAnimFrameSegment = struct {
                 pub const m_nUniqueFrameIndex: usize = 0x0; // int32
                 pub const m_nLocalElementMasks: usize = 0x4; // uint32
@@ -6006,17 +6383,6 @@ pub const cs2_dumper = struct {
                 pub const m_speedFunction: usize = 0x8; // DampingSpeedFunction
                 pub const m_fSpeedScale: usize = 0xC; // float32
                 pub const m_fFallingSpeedScale: usize = 0x10; // float32
-            };
-            // Parent: None
-            // Field count: 4
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
-            pub const CNmIKBody = struct {
-                pub const m_flMass: usize = 0x0; // float32
-                pub const m_vLocalMassCenter: usize = 0x4; // Vector
-                pub const m_vRadius: usize = 0x10; // Vector
-                pub const m_flResistance: usize = 0x1C; // float32
             };
             // Parent: None
             // Field count: 4
@@ -6297,13 +6663,13 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmBlend2DNode__CDefinition = struct {
-                pub const m_sourceNodeIndices: usize = 0x10; // CUtlVectorFixedGrowable<int16,5>
-                pub const m_nInputParameterNodeIdx0: usize = 0x38; // int16
-                pub const m_nInputParameterNodeIdx1: usize = 0x3A; // int16
-                pub const m_values: usize = 0x40; // CUtlVectorFixedGrowable<Vector2D,10>
-                pub const m_indices: usize = 0xA8; // CUtlVectorFixedGrowable<uint8,30>
-                pub const m_hullIndices: usize = 0xE0; // CUtlVectorFixedGrowable<uint8,10>
-                pub const m_bAllowLooping: usize = 0x108; // bool
+                pub const m_sourceNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
+                pub const m_values: usize = 0x28; // CUtlLeanVectorFixedGrowable<Vector2D,10>
+                pub const m_indices: usize = 0x80; // CUtlLeanVectorFixedGrowable<uint8,30>
+                pub const m_hullIndices: usize = 0xA8; // CUtlLeanVectorFixedGrowable<uint8,10>
+                pub const m_nInputParameterNodeIdx0: usize = 0xC0; // int16
+                pub const m_nInputParameterNodeIdx1: usize = 0xC2; // int16
+                pub const m_bAllowLooping: usize = 0xC4; // bool
             };
             // Parent: None
             // Field count: 2
@@ -6689,7 +7055,11 @@ pub const cs2_dumper = struct {
                 pub const m_flBlendTimeSeconds: usize = 0x24; // float32
                 pub const m_blendMode: usize = 0x28; // NmIKBlendMode_t
                 pub const m_bIsTargetInWorldSpace: usize = 0x29; // bool
-                pub const m_flReferencePoseTwistWeight: usize = 0x2C; // float32
+                pub const m_flChainRotationWeight: usize = 0x2C; // float32
+            };
+            // Parent: None
+            // Field count: 0
+            pub const CNmGraphInstance = struct {
             };
             // Parent: None
             // Field count: 1
@@ -6732,6 +7102,16 @@ pub const cs2_dumper = struct {
             // Field count: 1
             pub const PulseRuntimeConstantIndex_t = struct {
                 pub const m_Value: usize = 0x0; // int16
+            };
+            // Parent: None
+            // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CFootAdjustmentInstanceData = struct {
+                pub const m_flStartTime: usize = 0xC; // CAnimNetVar<float32>
+                pub const m_flDuration: usize = 0x18; // CAnimNetVar<float32>
+                pub const m_flStartHeadingWS: usize = 0x3C; // float32
             };
             // Parent: None
             // Field count: 5
@@ -6870,8 +7250,8 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmIDEvent = struct {
-                pub const m_ID: usize = 0x20; // CGlobalSymbol
-                pub const m_secondaryID: usize = 0x28; // CGlobalSymbol
+                pub const m_ID: usize = 0x18; // CGlobalSymbol
+                pub const m_secondaryID: usize = 0x20; // CGlobalSymbol
             };
             // Parent: None
             // Field count: 2
@@ -6904,18 +7284,30 @@ pub const cs2_dumper = struct {
                 pub const m_outputBones: usize = 0x38; // CUtlVector<std::pair<CUtlString,uint32>>
             };
             // Parent: None
+            // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CNetworkedCycle = struct {
+                pub const m_flCycleUnclamped: usize = 0x0; // float32
+                pub const m_flPrevCycleUnclamped: usize = 0x4; // float32
+                pub const m_flCyclesPerSecond: usize = 0x10; // CAnimNetVar<float32>
+                pub const m_flCycleZeroTime: usize = 0x1C; // CAnimNetVar<float32>
+                pub const m_resetCount: usize = 0x28; // CAnimNetVar<uint8>
+            };
+            // Parent: None
             // Field count: 7
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmSoundEvent = struct {
-                pub const m_relevance: usize = 0x20; // CNmEventRelevance_t
-                pub const m_name: usize = 0x28; // CUtlString
-                pub const m_position: usize = 0x30; // CNmSoundEvent::Position_t
-                pub const m_attachmentName: usize = 0x38; // CUtlString
-                pub const m_tags: usize = 0x40; // CUtlString
-                pub const m_bContinuePlayingSoundAtDurationEnd: usize = 0x48; // bool
-                pub const m_flDurationInterruptionThreshold: usize = 0x4C; // float32
+                pub const m_relevance: usize = 0x18; // CNmEventRelevance_t
+                pub const m_name: usize = 0x20; // CUtlString
+                pub const m_position: usize = 0x28; // CNmSoundEvent::Position_t
+                pub const m_attachmentName: usize = 0x30; // CUtlString
+                pub const m_tags: usize = 0x38; // CUtlString
+                pub const m_bContinuePlayingSoundAtDurationEnd: usize = 0x40; // bool
+                pub const m_flDurationInterruptionThreshold: usize = 0x44; // float32
             };
             // Parent: None
             // Field count: 14
@@ -6936,7 +7328,7 @@ pub const cs2_dumper = struct {
                 pub const m_nAttachBoneIdx: usize = 0x90; // int32
                 pub const m_nAttachMeshIdx: usize = 0x94; // int32
                 pub const m_nAttachMeshDrawCallIdx: usize = 0x98; // int32
-                pub const m_bEnableSimulation: usize = 0x9C; // bool
+                pub const m_bEnableSimulation: usize = 0xAC; // bool
             };
             // Parent: None
             // Field count: 5
@@ -6944,8 +7336,8 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmParameterizedClipSelectorNode__CDefinition = struct {
-                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
-                pub const m_optionWeights: usize = 0x28; // CUtlLeanVectorFixedGrowable<uint8,5>
+                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,8>
+                pub const m_optionWeights: usize = 0x28; // CUtlLeanVectorFixedGrowable<uint8,8>
                 pub const m_parameterNodeIdx: usize = 0x38; // int16
                 pub const m_bIgnoreInvalidOptions: usize = 0x3A; // bool
                 pub const m_bHasWeightsSet: usize = 0x3B; // bool
@@ -6973,6 +7365,18 @@ pub const cs2_dumper = struct {
             // MGetKV3ClassDefaults
             pub const CVPhysXSurfacePropertiesList = struct {
                 pub const m_surfacePropertiesList: usize = 0x0; // CUtlVector<CPhysSurfaceProperties*>
+            };
+            // Parent: None
+            // Field count: 5
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CNmFloatSpringNode__CDefinition = struct {
+                pub const m_flStartValue: usize = 0x10; // float32
+                pub const m_flHertz: usize = 0x14; // float32
+                pub const m_flDampingRatio: usize = 0x18; // float32
+                pub const m_nInputValueNodeIdx: usize = 0x1C; // int16
+                pub const m_bUseStartValue: usize = 0x1E; // bool
             };
             // Parent: None
             // Field count: 7
@@ -7016,7 +7420,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmTargetSelectorNode__CDefinition = struct {
-                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
+                pub const m_optionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,8>
                 pub const m_flOrientationScoreWeight: usize = 0x28; // float32
                 pub const m_flPositionScoreWeight: usize = 0x2C; // float32
                 pub const m_parameterNodeIdx: usize = 0x30; // int16
@@ -7082,6 +7486,16 @@ pub const cs2_dumper = struct {
                 pub const m_bUseHysteresis: usize = 0xC3; // bool
             };
             // Parent: None
+            // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CRootMotion = struct {
+                pub const m_deltaTransform: usize = 0x0; // CMotionTransform
+                pub const m_vVelocityMS: usize = 0x10; // Vector
+                pub const m_vUpOverride: usize = 0x1C; // Vector
+            };
+            // Parent: None
             // Field count: 1
             //
             // Metadata:
@@ -7109,16 +7523,16 @@ pub const cs2_dumper = struct {
             // Parent: None
             // Field count: 10
             pub const CNmTwoBoneIKTask = struct {
-                pub const m_nEffectorBoneIdx: usize = 0x58; // int32
-                pub const m_nEffectorTargetBoneIdx: usize = 0x5C; // int32
-                pub const m_targetTransform: usize = 0x60; // CTransform
-                pub const m_effectorTarget: usize = 0x80; // CNmTarget
-                pub const m_blendMode: usize = 0xB0; // NmIKBlendMode_t
-                pub const m_flBlendWeight: usize = 0xB4; // float32
-                pub const m_bIsTargetInWorldSpace: usize = 0xB8; // bool
-                pub const m_bIsRunningFromDeserializedData: usize = 0xB9; // bool
-                pub const m_flReferencePoseTwistWeight: usize = 0xBC; // float32
-                pub const m_debugEffectorBoneID: usize = 0xC0; // CGlobalSymbol
+                pub const m_nEffectorBoneIdx: usize = 0x48; // int32
+                pub const m_nEffectorTargetBoneIdx: usize = 0x4C; // int32
+                pub const m_targetTransform: usize = 0x50; // CTransform
+                pub const m_effectorTarget: usize = 0x70; // CNmTarget
+                pub const m_blendMode: usize = 0xA0; // NmIKBlendMode_t
+                pub const m_flBlendWeight: usize = 0xA4; // float32
+                pub const m_bIsTargetInWorldSpace: usize = 0xA8; // bool
+                pub const m_bIsRunningFromDeserializedData: usize = 0xA9; // bool
+                pub const m_flChainRotationWeight: usize = 0xAC; // float32
+                pub const m_debugEffectorBoneID: usize = 0xB0; // CGlobalSymbol
             };
             // Parent: None
             // Field count: 2
@@ -7263,7 +7677,7 @@ pub const cs2_dumper = struct {
                 pub const m_overrideFlags: usize = 0x28; // CNmBitFlags
             };
             // Parent: None
-            // Field count: 10
+            // Field count: 11
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -7271,13 +7685,14 @@ pub const cs2_dumper = struct {
                 pub const m_nClipReferenceNodeIdx: usize = 0x10; // int16
                 pub const m_nTargetValueNodeIdx: usize = 0x12; // int16
                 pub const m_samplingMode: usize = 0x14; // CNmRootMotionData::SamplingMode_t
-                pub const m_bAllowTargetUpdate: usize = 0x15; // bool
+                pub const m_targetUpdateRule: usize = 0x15; // CNmTargetWarpNode::TargetUpdateRule_t
                 pub const m_bAlignWithTargetAtLastWarpEvent: usize = 0x16; // bool
                 pub const m_flSamplingPositionErrorThresholdSq: usize = 0x18; // float32
                 pub const m_flMaxTangentLength: usize = 0x1C; // float32
                 pub const m_flLerpFallbackDistanceThreshold: usize = 0x20; // float32
                 pub const m_flTargetUpdateDistanceThreshold: usize = 0x24; // float32
                 pub const m_flTargetUpdateAngleThresholdRadians: usize = 0x28; // float32
+                pub const m_alignmentBoneID: usize = 0x30; // CGlobalSymbol
             };
             // Parent: None
             // Field count: 6
@@ -7425,23 +7840,6 @@ pub const cs2_dumper = struct {
                 pub const m_flComparisonValue: usize = 0x1C; // float32
             };
             // Parent: None
-            // Field count: 13
-            pub const CNmChainSolverTask = struct {
-                pub const m_nEffectorBoneIdx: usize = 0x58; // int32
-                pub const m_nEffectorTargetBoneIdx: usize = 0x5C; // int32
-                pub const m_targetTransform: usize = 0x60; // CTransform
-                pub const m_nNumBonesInChain: usize = 0x80; // int32
-                pub const m_effectorTarget: usize = 0x90; // CNmTarget
-                pub const m_blendMode: usize = 0xC0; // NmIKBlendMode_t
-                pub const m_flBlendWeight: usize = 0xC4; // float32
-                pub const m_bIsTargetInWorldSpace: usize = 0xC8; // bool
-                pub const m_bIsRunningFromDeserializedData: usize = 0xC9; // bool
-                pub const m_debugEffectorBoneID: usize = 0xD0; // CGlobalSymbol
-                pub const m_chainStartTransformMS: usize = 0xE0; // CTransform
-                pub const m_debugRequestedTargetTransformMS: usize = 0x100; // CTransform
-                pub const m_debugTotalChainLength: usize = 0x120; // float32
-            };
-            // Parent: None
             // Field count: 10
             //
             // Metadata:
@@ -7459,6 +7857,16 @@ pub const cs2_dumper = struct {
                 pub const m_bPreEvaluatePassthroughTransitionPath: usize = 0x0; // bitfield:1
             };
             // Parent: None
+            // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CTurnHelperInstanceData = struct {
+                pub const m_turnAmount: usize = 0x0; // float32
+                pub const m_turnStartTime: usize = 0x4; // float32
+                pub const m_duration: usize = 0x8; // float32
+            };
+            // Parent: None
             // Field count: 0
             pub const CNmTargetValueNode__CDefinition = struct {
             };
@@ -7468,6 +7876,15 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const COrientConstraint = struct {
+            };
+            // Parent: None
+            // Field count: 2
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CCycleClipInstanceData = struct {
+                pub const m_flCycle: usize = 0x0; // CAnimNetVar<float32>
+                pub const m_flPrevCycle: usize = 0xC; // CAnimNetVar<float32>
             };
             // Parent: None
             // Field count: 12
@@ -7497,6 +7914,21 @@ pub const cs2_dumper = struct {
                 pub const m_nBaseNodeIdx: usize = 0x10; // int16
                 pub const m_bOnlySampleBaseRootMotion: usize = 0x12; // bool
                 pub const m_layerDefinition: usize = 0x18; // CUtlLeanVectorFixedGrowable<CNmLayerBlendNode::LayerDefinition_t,3>
+            };
+            // Parent: None
+            // Field count: 8
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CNmFootIKNode__CDefinition = struct {
+                pub const m_leftEffectorBoneID: usize = 0x18; // CGlobalSymbol
+                pub const m_rightEffectorBoneID: usize = 0x20; // CGlobalSymbol
+                pub const m_nLeftTargetNodeIdx: usize = 0x28; // int16
+                pub const m_nRightTargetNodeIdx: usize = 0x2A; // int16
+                pub const m_nEnabledNodeIdx: usize = 0x2C; // int16
+                pub const m_flBlendTimeSeconds: usize = 0x30; // float32
+                pub const m_blendMode: usize = 0x34; // NmIKBlendMode_t
+                pub const m_bIsTargetInWorldSpace: usize = 0x35; // bool
             };
             // Parent: None
             // Field count: 2
@@ -7704,9 +8136,9 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmIDSelectorNode__CDefinition = struct {
-                pub const m_conditionNodeIndices: usize = 0x10; // CUtlVectorFixedGrowable<int16,5>
-                pub const m_values: usize = 0x38; // CUtlVectorFixedGrowable<CGlobalSymbol,5>
-                pub const m_defaultValue: usize = 0x78; // CGlobalSymbol
+                pub const m_conditionNodeIndices: usize = 0x10; // CUtlLeanVectorFixedGrowable<int16,5>
+                pub const m_values: usize = 0x28; // CUtlLeanVectorFixedGrowable<CGlobalSymbol,5>
+                pub const m_defaultValue: usize = 0x58; // CGlobalSymbol
             };
             // Parent: None
             // Field count: 15
@@ -7780,6 +8212,16 @@ pub const cs2_dumper = struct {
                 pub const m_nInputValueNodeIdx: usize = 0x10; // int16
                 pub const m_comparison: usize = 0x12; // CNmIDComparisonNode::Comparison_t
                 pub const m_comparisionIDs: usize = 0x18; // CUtlLeanVectorFixedGrowable<CGlobalSymbol,4>
+            };
+            // Parent: None
+            // Field count: 3
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const PairedSequence_t = struct {
+                pub const m_sRole: usize = 0x0; // CGlobalSymbol
+                pub const m_sSequenceName: usize = 0x8; // CGlobalSymbol
+                pub const m_hSequence: usize = 0x10; // CAnimNetVar<uint32>
             };
             // Parent: None
             // Field count: 0
@@ -8194,7 +8636,7 @@ pub const cs2_dumper = struct {
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmFootEvent = struct {
-                pub const m_phase: usize = 0x20; // NmFootPhase_t
+                pub const m_phase: usize = 0x18; // NmFootPhase_t
             };
             // Parent: None
             // Field count: 8
@@ -8326,6 +8768,14 @@ pub const cs2_dumper = struct {
                 pub const m_scriptsToRun: usize = 0x30; // CUtlVector<CGlobalSymbol>
             };
             // Parent: None
+            // Field count: 1
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const NetVarConfigIndex = struct {
+                pub const m_index: usize = 0x0; // CAnimNetVar<uint32>
+            };
+            // Parent: None
             // Field count: 5
             //
             // Metadata:
@@ -8356,6 +8806,20 @@ pub const cs2_dumper = struct {
                 pub const m_flTimingBlend: usize = 0x84; // float32
                 pub const m_bResetChild1: usize = 0x88; // bool
                 pub const m_bResetChild2: usize = 0x89; // bool
+            };
+            // Parent: None
+            // Field count: 7
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const CBlendNodeInstanceData = struct {
+                pub const m_dampedValue: usize = 0x0; // float32
+                pub const m_flCycle: usize = 0x4; // float32
+                pub const m_flCycleZeroTime: usize = 0x8; // float32
+                pub const m_flPlaybackRate: usize = 0xC; // float32
+                pub const m_flBlendValue: usize = 0x10; // CAnimNetVar<float32>
+                pub const m_flDuration: usize = 0x1C; // float32
+                pub const m_resetCount: usize = 0x20; // CAnimNetVar<uint8>
             };
             // Parent: None
             // Field count: 3
@@ -8480,11 +8944,12 @@ pub const cs2_dumper = struct {
             pub const CNmControlParameterIDNode__CDefinition = struct {
             };
             // Parent: None
-            // Field count: 2
+            // Field count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
             pub const CNmBodyGroupEvent = struct {
+                pub const m_target: usize = 0x18; // CNmEventTargetEntity_t
                 pub const m_groupName: usize = 0x20; // CUtlString
                 pub const m_nGroupValue: usize = 0x28; // int32
             };
