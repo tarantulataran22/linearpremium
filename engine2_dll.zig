@@ -1,10 +1,10 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-03-16 07:21:21.899821400 UTC
+// 2026-06-19 11:06:41.672420600 UTC
 
 pub const cs2_dumper = struct {
     pub const schemas = struct {
         // Module: engine2.dll
-        // Class count: 55
+        // Class count: 56
         // Enum count: 2
         pub const engine2_dll = struct {
             // Alignment: 4
@@ -24,14 +24,10 @@ pub const cs2_dumper = struct {
             };
             // Parent: None
             // Field count: 3
-            //
-            // Metadata:
-            // NetworkVarNames: m_pEntity (CEntityIdentity*)
-            // NetworkVarNames: m_CScriptComponent (CScriptComponent::Storage_t)
             pub const CEntityInstance = struct {
                 pub const m_iszPrivateVScripts: usize = 0x8; // CUtlSymbolLarge
                 pub const m_pEntity: usize = 0x10; // CEntityIdentity*
-                pub const m_CScriptComponent: usize = 0x30; // CScriptComponent*
+                pub const m_CScriptComponent: usize = 0x28; // CScriptComponent*
             };
             // Parent: None
             // Field count: 0
@@ -44,11 +40,8 @@ pub const cs2_dumper = struct {
             };
             // Parent: None
             // Field count: 12
-            //
-            // Metadata:
-            // NetworkVarNames: m_nameStringableIndex (int32)
             pub const CEntityIdentity = struct {
-                pub const m_nameStringableIndex: usize = 0x14; // int32
+                pub const m_nameStringTableIndex: usize = 0x14; // int32
                 pub const m_name: usize = 0x18; // CUtlSymbolLarge
                 pub const m_designerName: usize = 0x20; // CUtlSymbolLarge
                 pub const m_flags: usize = 0x30; // uint32
@@ -119,6 +112,22 @@ pub const cs2_dumper = struct {
             // Parent: None
             // Field count: 0
             pub const EventServerBeginSimulate_t = struct {
+            };
+            // Parent: None
+            // Field count: 9
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const EntityIOQueuePrioritizedEvent_t = struct {
+                pub const m_flFireTime: usize = 0x4; // GameTime_t
+                pub const m_targetType: usize = 0x8; // EntityIOTargetType_t
+                pub const m_pTarget: usize = 0x10; // CUtlSymbolLarge
+                pub const m_pTargetInput: usize = 0x18; // CUtlSymbolLarge
+                pub const m_hActivator: usize = 0x20; // CEntityHandle
+                pub const m_hCaller: usize = 0x24; // CEntityHandle
+                pub const m_nOutputID: usize = 0x28; // int32
+                pub const m_hEntTarget: usize = 0x2C; // CEntityHandle
+                pub const m_variantValue: usize = 0x30; // CVariantBase<CVariantDefaultAllocator>
             };
             // Parent: None
             // Field count: 0
@@ -280,15 +289,15 @@ pub const cs2_dumper = struct {
                 pub const m_flTickRemainder: usize = 0x58; // float64
             };
             // Parent: None
-            // Field count: 0
-            pub const EntOutput_t = struct {
-            };
-            // Parent: None
             // Field count: 3
             pub const EventSimulate_t = struct {
                 pub const m_LoopState: usize = 0x0; // EngineLoopState_t
                 pub const m_bFirstTick: usize = 0x28; // bool
                 pub const m_bLastTick: usize = 0x29; // bool
+            };
+            // Parent: None
+            // Field count: 0
+            pub const CEntityKeyValues = struct {
             };
             // Parent: None
             // Field count: 0

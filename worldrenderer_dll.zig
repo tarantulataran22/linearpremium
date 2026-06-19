@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-03-16 07:21:21.899821400 UTC
+// 2026-06-19 11:06:41.672420600 UTC
 
 pub const cs2_dumper = struct {
     pub const schemas = struct {
@@ -14,7 +14,7 @@ pub const cs2_dumper = struct {
                 RTPROXY_INSTANCE_UNIQUE_MESH = 0x1
             };
             // Alignment: 4
-            // Member count: 15
+            // Member count: 16
             pub const ObjectTypeFlags_t = enum(u32) {
                 OBJECT_TYPE_NONE = 0x0,
                 OBJECT_TYPE_MODEL = 0x8,
@@ -22,7 +22,6 @@ pub const cs2_dumper = struct {
                 OBJECT_TYPE_NO_SHADOWS = 0x20,
                 OBJECT_TYPE_WORLDSPACE_TEXURE_BLEND = 0x40,
                 OBJECT_TYPE_DISABLED_IN_LOW_QUALITY = 0x80,
-                OBJECT_TYPE_NO_SUN_SHADOWS = 0x100,
                 OBJECT_TYPE_RENDER_WITH_DYNAMIC = 0x200,
                 OBJECT_TYPE_RENDER_TO_CUBEMAPS = 0x400,
                 OBJECT_TYPE_MODEL_HAS_LODS = 0x800,
@@ -30,7 +29,9 @@ pub const cs2_dumper = struct {
                 OBJECT_TYPE_PRECOMPUTED_VISMEMBERS = 0x4000,
                 OBJECT_TYPE_STATIC_CUBE_MAP = 0x8000,
                 OBJECT_TYPE_DISABLE_VIS_CULLING = 0x10000,
-                OBJECT_TYPE_BAKED_GEOMETRY = 0x20000
+                OBJECT_TYPE_BAKED_GEOMETRY = 0x20000,
+                OBJECT_TYPE_NEEDS_DYNAMIC_SHADOWS = 0x40000,
+                OBJECT_TYPE_HAS_AGGREGATE_RTPROXY = 0x80000
             };
             // Alignment: 1
             // Member count: 4
@@ -42,14 +43,10 @@ pub const cs2_dumper = struct {
             };
             // Parent: None
             // Field count: 3
-            //
-            // Metadata:
-            // NetworkVarNames: m_pEntity (CEntityIdentity*)
-            // NetworkVarNames: m_CScriptComponent (CScriptComponent::Storage_t)
             pub const CEntityInstance = struct {
                 pub const m_iszPrivateVScripts: usize = 0x8; // CUtlSymbolLarge
                 pub const m_pEntity: usize = 0x10; // CEntityIdentity*
-                pub const m_CScriptComponent: usize = 0x30; // CScriptComponent*
+                pub const m_CScriptComponent: usize = 0x28; // CScriptComponent*
             };
             // Parent: None
             // Field count: 0
@@ -62,11 +59,8 @@ pub const cs2_dumper = struct {
             };
             // Parent: None
             // Field count: 12
-            //
-            // Metadata:
-            // NetworkVarNames: m_nameStringableIndex (int32)
             pub const CEntityIdentity = struct {
-                pub const m_nameStringableIndex: usize = 0x14; // int32
+                pub const m_nameStringTableIndex: usize = 0x14; // int32
                 pub const m_name: usize = 0x18; // CUtlSymbolLarge
                 pub const m_designerName: usize = 0x20; // CUtlSymbolLarge
                 pub const m_flags: usize = 0x30; // uint32

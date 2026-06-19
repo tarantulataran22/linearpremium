@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-04-03 12:05:58.221067300 UTC
+// 2026-06-19 11:06:41.672420600 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: resourcesystem.dll
@@ -24,13 +24,6 @@ namespace CS2Dumper.Schemas {
         public enum FuseVariableAccess_t : byte {
             WRITABLE = 0x0,
             READ_ONLY = 0x1
-        }
-        // Parent: None
-        // Field count: 0
-        //
-        // Metadata:
-        // MResourceTypeForInfoType
-        public static class InfoForResourceTypeCNmIKRig {
         }
         // Parent: None
         // Field count: 0
@@ -369,6 +362,13 @@ namespace CS2Dumper.Schemas {
         // Metadata:
         // MResourceTypeForInfoType
         public static class InfoForResourceTypeIPulseGraphDef {
+        }
+        // Parent: None
+        // Field count: 0
+        //
+        // Metadata:
+        // MResourceTypeForInfoType
+        public static class InfoForResourceTypeCVDataItemDefs {
         }
         // Parent: None
         // Field count: 5

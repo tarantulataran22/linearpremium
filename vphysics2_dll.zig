@@ -1,11 +1,11 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2026-03-16 07:21:21.899821400 UTC
+// 2026-06-19 11:06:41.672420600 UTC
 
 pub const cs2_dumper = struct {
     pub const schemas = struct {
         // Module: vphysics2.dll
-        // Class count: 101
-        // Enum count: 3
+        // Class count: 110
+        // Enum count: 5
         pub const vphysics2_dll = struct {
             // Alignment: 4
             // Member count: 3
@@ -28,6 +28,27 @@ pub const cs2_dumper = struct {
                 DYNAMIC_CONTINUOUS_ALLOW_IF_REQUESTED_BY_OTHER_BODY = 0x0,
                 DYNAMIC_CONTINUOUS_ALWAYS = 0x1,
                 DYNAMIC_CONTINUOUS_NEVER = 0x2
+            };
+            // Alignment: 4
+            // Member count: 8
+            pub const PhysInterfaceId_t = enum(u32) {
+                PIID_UNKNOWN = 0x0,
+                PIID_IPHYSICSBODY = 0x1,
+                PIID_IPHYSAGGREGATE = 0x2,
+                PIID_IPHYSICSJOINT = 0x3,
+                PIID_IPHYSICSMOTIONCONTROLLER = 0x4,
+                PIID_IPHYSICSPARTICLEROPE = 0x5,
+                PIID_IPHYSICSRAGDOLLCONTROL = 0x6,
+                PIID_NUM_TYPES = 0x7
+            };
+            // Alignment: 1
+            // Member count: 5
+            pub const PhysGenericShapeType_t = enum(u8) {
+                GENERIC_SHAPE_POINT = 0x0,
+                GENERIC_SHAPE_SPHERE = 0x1,
+                GENERIC_SHAPE_AABB = 0x2,
+                GENERIC_SHAPE_CAPSULE = 0x3,
+                GENERIC_SHAPE_HULL = 0x4
             };
             // Parent: None
             // Field count: 1
@@ -234,6 +255,12 @@ pub const cs2_dumper = struct {
                 pub const m_jiggleBone: usize = 0x8; // CFeJiggleBone
             };
             // Parent: None
+            // Field count: 2
+            pub const IPhysAggregateInstance = struct {
+                pub const m_pSkeleton: usize = 0x8; // void*
+                pub const m_bIsAxisAligned: usize = 0x10; // bool
+            };
+            // Parent: None
             // Field count: 3
             //
             // Metadata:
@@ -285,12 +312,20 @@ pub const cs2_dumper = struct {
                 pub const f4RelaxationFactor: usize = 0x40; // fltx4
             };
             // Parent: None
+            // Field count: 0
+            pub const IPhysicsParticleRope = struct {
+            };
+            // Parent: None
             // Field count: 4
             pub const constraint_hingeparams_t = struct {
                 pub const worldPosition: usize = 0x0; // Vector
                 pub const worldAxisDirection: usize = 0xC; // Vector
                 pub const hingeAxis: usize = 0x18; // constraint_axislimit_t
                 pub const constraint: usize = 0x28; // constraint_breakableparams_t
+            };
+            // Parent: None
+            // Field count: 0
+            pub const IPhysicsBodyList = struct {
             };
             // Parent: None
             // Field count: 3
@@ -471,6 +506,10 @@ pub const cs2_dumper = struct {
                 pub const m_vNormal: usize = 0xC; // Vector
             };
             // Parent: None
+            // Field count: 0
+            pub const IPhysicsRagdollControl = struct {
+            };
+            // Parent: None
             // Field count: 3
             //
             // Metadata:
@@ -560,6 +599,10 @@ pub const cs2_dumper = struct {
                 pub const nNode: usize = 0x0; // uint16[2]
                 pub const flMaxDist: usize = 0x4; // float32
                 pub const flRelaxationFactor: usize = 0x8; // float32
+            };
+            // Parent: None
+            // Field count: 0
+            pub const IPhysicsJoint = struct {
             };
             // Parent: None
             // Field count: 3
@@ -680,6 +723,11 @@ pub const cs2_dumper = struct {
                 pub const flGroundFriction: usize = 0x4; // float32
                 pub const nListBegin: usize = 0x8; // uint16
                 pub const nListEnd: usize = 0xA; // uint16
+            };
+            // Parent: None
+            // Field count: 1
+            pub const CGenericShapeProxy = struct {
+                pub const m_verts: usize = 0x30; // CUtlLeanVectorFixedGrowable<Vector,8>
             };
             // Parent: None
             // Field count: 4
@@ -850,6 +898,23 @@ pub const cs2_dumper = struct {
                 pub const m_flMaxFraction: usize = 0x1C; // float32
                 pub const m_flScale: usize = 0x20; // float32
                 pub const m_pHull: usize = 0x28; // RnHull_t*
+            };
+            // Parent: None
+            // Field count: 10
+            //
+            // Metadata:
+            // MGetKV3ClassDefaults
+            pub const vphysics_save_ragdoll_control_t = struct {
+                pub const m_flMinSpringFrequency: usize = 0x0; // float32
+                pub const m_flMaxSpringFrequency: usize = 0x4; // float32
+                pub const m_flMaxStretch: usize = 0x8; // float32
+                pub const m_bSolidCollisionAtZeroWeight: usize = 0xC; // bool
+                pub const m_bRequiresDynamicBodies: usize = 0xD; // bool
+                pub const m_bIgnoreTeleport: usize = 0xE; // bool
+                pub const m_vLinearVelocityAccumulator: usize = 0x10; // Vector
+                pub const m_vAngularVelocityAccumulator: usize = 0x1C; // RotationVector
+                pub const m_vForceAccumulator: usize = 0x28; // Vector
+                pub const m_nBodyCount: usize = 0x34; // int32
             };
             // Parent: None
             // Field count: 5
@@ -1041,6 +1106,10 @@ pub const cs2_dumper = struct {
                 pub const m_nEdge: usize = 0x0; // uint8
             };
             // Parent: None
+            // Field count: 0
+            pub const IPhysicsMotionController = struct {
+            };
+            // Parent: None
             // Field count: 1
             //
             // Metadata:
@@ -1181,6 +1250,10 @@ pub const cs2_dumper = struct {
                 pub const m_nPriority: usize = 0x30; // int32
                 pub const m_nVertexMapHash: usize = 0x34; // uint32
                 pub const m_nAntitunnelGroupBits: usize = 0x38; // uint32
+            };
+            // Parent: None
+            // Field count: 0
+            pub const IPhysicsBody = struct {
             };
             // Parent: None
             // Field count: 2
